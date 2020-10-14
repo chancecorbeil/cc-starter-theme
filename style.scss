@@ -22,92 +22,31 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Generic
-	- Normalize
-	- Box sizing
-# Base
-	- Typography
-	- Elements
-	- Links
-	- Forms
-## Layouts
-# Components
-	- Navigation
-	- Posts and pages
-	- Comments
-	- Widgets
-	- Media
-	- Captions
-	- Galleries
-# plugins
-	- Jetpack infinite scroll
-# Utilities
-	- Accessibility
-	- Alignments
 
---------------------------------------------------------------*/
+// Import collection of WordPress Sass
+@import "../sass/bulma/sass/utilities/wordpressimports";
 
-// Import variables and mixins.
-@import "sass/abstracts/abstracts";
-
-/*--------------------------------------------------------------
-# Generic
---------------------------------------------------------------*/
-
-/* Normalize
---------------------------------------------- */
-@import "sass/generic/normalize";
-
-/* Box sizing
---------------------------------------------- */
-@import "sass/generic/box-sizing";
-
-/*--------------------------------------------------------------
-# Base
---------------------------------------------------------------*/
-@import "sass/base/base";
-
-/*--------------------------------------------------------------
-# Layouts
---------------------------------------------------------------*/
-// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
-// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
-
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-@import "sass/components/components";
-
-/*--------------------------------------------------------------
-# Plugins
---------------------------------------------------------------*/
-
-/* Jetpack infinite scroll
---------------------------------------------- */
-@import "sass/plugins/jetpack/infinite-scroll";
-
-/*--------------------------------------------------------------
-# Utilities
---------------------------------------------------------------*/
-
-/* Accessibility
---------------------------------------------- */
-@import "sass/utilities/accessibility";
-
-/* Alignments
---------------------------------------------- */
-@import "sass/utilities/alignments";
-
-
-// 1. Import the initial variables
+// Import the initial variables
 @import "../sass/bulma/sass/utilities/initial-variables";
 @import "../sass/bulma/sass/utilities/functions";
 
 
-// 2. Set your own initial variables
+// Table Of Contents
+// Colors
+// Titles
+// General
+// Buttons
+// Navigation
+// Hero template
+// Page template
+// Main Content Area
+// Sidebar
+// Home Page
+// Header
+// Footer
+// Screen Size Break Points
+
+
 
 // Colors
 $darkbluetitles: #3E485C;
@@ -135,11 +74,12 @@ a:visited {
 	color: $black;
 	text-decoration: underline;
 	text-decoration-color: $salmon;
-	text-decoration-thickness: 3px;
 }
 
-.page-content, .entry-content, .entry-summary {
-    margin: 0;
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0;
 }
 
 .single .subtitle,
@@ -160,7 +100,8 @@ nav .is-lightblue.navbar-item a {
 
 
 // Add a serif family
-$family-serif: 'Montserrat', sans-serif;
+$family-serif: 'Montserrat',
+sans-serif;
 // Use the new serif family
 $family-primary: $family-serif;
 
@@ -171,19 +112,19 @@ $body-line-height: 1.666;
 
 $section-padding: 65px 35px;
 
-$desktop: 1138px + (2 * $gap);
-$widescreen: 1138px + (2 * $gap);
-$fullhd: 1138px + (2 * $gap);
+$desktop: 1138px+(2 * $gap);
+$widescreen: 1138px+(2 * $gap);
+$fullhd: 1138px+(2 * $gap);
 
 
 // Titles
-h1 { 
+h1 {
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
- }
+}
 
- h1.title { 
+h1.title {
 	color: #ffffff;
 	font-size: 60px;
 	letter-spacing: 2px;
@@ -228,10 +169,10 @@ h3.title.is-salmon a {
 	color: $salmon;
 }
 
-p.subtitle { 
+p.subtitle {
 	color: $lightblue;
 	font-weight: $weight-bold;
-	text-transform: uppercase; 
+	text-transform: uppercase;
 	font-size: 24px;
 }
 
@@ -242,18 +183,9 @@ body {
 	overflow-x: hidden;
 }
 
-
-
-.hrf-faq-list article:last-of-type {
-	display: none !important;
-}
-
-.hrf-faq-list p {
-	padding-bottom: 12px;
-}
-
-.post, .page {
-    margin: 0;
+.post,
+.page {
+	margin: 0;
 }
 
 section.announcementbar {
@@ -282,13 +214,14 @@ section.announcementbar {
 	border: none !important;
 	color: $white;
 	font-weight: $weight-bold;
-	text-transform: uppercase; 
+	text-transform: uppercase;
 	font-size: 15px;
 	letter-spacing: 1px;
 }
 
-section .button:hover, .button.is-hovered {
-    color:  $white;
+section .button:hover,
+.button.is-hovered {
+	color: $white;
 }
 
 .button.is-lightblue {
@@ -314,7 +247,7 @@ nav a:visited {
 	border-radius: 0;
 	color: $darkblue;
 	font-weight: $weight-bold;
-	text-transform: uppercase; 
+	text-transform: uppercase;
 	font-size: 16px;
 	letter-spacing: 1px;
 }
@@ -330,7 +263,8 @@ nav li.button {
 	height: 30px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-right: 16px;;
+	margin-right: 16px;
+	;
 
 	a {
 		color: $white;
@@ -342,7 +276,7 @@ nav li.button {
 	nav .navbar-menu {
 		background-color: white;
 		box-shadow: none;
-		
+
 		.button {
 			text-align: left;
 			color: $darkblue;
@@ -360,42 +294,45 @@ nav li.button {
 		li a,
 		li a.is-light-blue,
 		li a.is-lightblue.navbar-item,
-		li a.is-lightblue.navbar-item a  {
-			color: $darkblue !important; 
+		li a.is-lightblue.navbar-item a {
+			color: $darkblue !important;
 		}
 	}
 
 	nav .navbar-burger {
 		margin-top: 16px;
 	}
-		
+
 	nav .navbar-burger:hover {
 		background-color: transparent;
 	}
 
 }
 
-// Page template
+
+// Hero template
 
 .hero nav.tabs.is-boxed {
 	background-color: $darkbluetitles;
 
 	ul {
-	align-items: center;
-	justify-content: center;
-	
+		align-items: center;
+		justify-content: center;
+
 		a,
 		a:visited {
 			border-radius: 0;
 			color: $white;
 			font-weight: $weight-bold;
-			text-transform: uppercase; 
+			text-transform: uppercase;
 			font-size: 15px;
 			padding: 18px 23px;
 		}
 
 	}
 }
+
+// Page template
 
 // Main Content Area
 
@@ -404,7 +341,7 @@ nav li.button {
 	p {
 		padding-bottom: 12px;
 	}
-	
+
 	.pageparticle {
 		border-bottom: 1px solid $salmon;
 		padding-top: 38px;
@@ -422,8 +359,8 @@ nav li.button {
 		padding-top: 38px;
 		padding-bottom: 60px;
 	}
-	
-	hr { 
+
+	hr {
 		background-color: $salmon;
 		margin-top: 38px;
 		margin-bottom: 60px;
@@ -433,26 +370,11 @@ nav li.button {
 
 }
 
-// News
-
-.newsarticle {
-	.newscontent {
-		padding-bottom: 25px;
-	}
-}
-
-.newssidebarparticle {
-	display: none;
-}
-
-.post-type-archive-news .newssidebarparticle {
-	display: block;
-}
 
 // Sidebar
 
 .sidebar {
-	p.subtitle { 
+	p.subtitle {
 		color: $salmon;
 		font-size: 18px;
 	}
@@ -474,12 +396,6 @@ nav li.button {
 			padding-bottom: 25px;
 		}
 
-		.socialmediafeature {
-			background-color: $limegreen;
-			padding: 35px;
-			text-align: center;
-		}
-
 		.quotefeature {
 			h3 {
 				font-size: 32px;
@@ -487,16 +403,17 @@ nav li.button {
 				font-family: Georgia, 'Times New Roman', Times, serif;
 				color: $lightblue;
 			}
+
 			p {
 				padding-bottom: 0;
 				text-align: center;
 				font-size: 14px;
 				font-weight: 500;
 			}
-	
+
 		}
 	}
-	
+
 	.pageparticle {
 		p:last-of-type {
 			padding-bottom: 25px;
@@ -506,126 +423,6 @@ nav li.button {
 
 // Home Page
 
-.homepagesections {
-	.section {
-		padding: 40px 0;
-
-		p {
-			font-size: 20px;
-			font-weight: 600;
-			color: $darkblue;
-			padding-bottom: 40px;
-		}
-
-		h3 {
-			margin-bottom: 45px;
-		}
-	}
-}
-
-section.homealtsection {
-	h3 {
-		text-transform: uppercase;
-	}
-}
-
-section.widehomesection {
-	padding-left: 0;
-	padding-right: 0;
-	}
-
-section.newssection {
-
-	h2.title.newsspotlights {
-		font-size: 53px;
-		font-weight: bold;
-		text-transform: uppercase;
-		color: $lightblue;
-		margin-bottom: 0;
-	}
-
-	.seeallnews {
-		text-align: right;
-	}
-
-	.level {
-		margin-bottom: 62px;
-
-		a,
-		a:visited {
-			font-size: 18px;
-			font-weight: 500;
-			color: $darkbluetitles;
-		}
-	}
-
-	.newssecondcolumn {
-		border-left: 2px solid $lightblue;
-	}
-	
-	.pageparticle {
-	
-			h3.title {
-				font-size: 30px;
-				font-weight: bold;
-				color: $darkbluetitles;
-				margin-bottom: 14px;
-
-				a {
-					color: $darkbluetitles;
-				}
-			}
-	
-			p.sourceanddate {
-				font-size: 16px;
-				font-weight: bold;
-				color: $salmon;
-				padding-bottom: 25px;
-			}
-	
-			p {
-				padding-bottom: 35px;
-			}
-			
-	}
-
-}
-
-.home .footerhouses {
-	display: none;
-}
-
-@media screen and (max-width: 768px) {
-
-	.homepagesections {
-		.section {
-			h3.title {
-				margin-bottom: 23px;
-				font-size: 28px;
-			}
-		}
-	}
-
-	section.newssection {
-
-		.seeallnews {
-			text-align: center;
-		}
-
-		h2.title.newsspotlights {
-			text-align: center;
-			font-size: 28px;
-		}
-
-		.newssecondcolumn {
-			border-left: 0px solid $lightblue;
-		}
-
-	}
-
-
-}
-	
 
 // Header
 
@@ -637,149 +434,21 @@ section.headersection {
 
 // Footer
 
-section.footersection {
-	background-color: $darkblue;
-		padding-top: 62px;
-		padding-bottom: 62px;
-	background-image: url(http://paneltopagetheme.com/wp-content/uploads/2020/09/footer-bg.png);
-	background-position: bottom right;
-	background-repeat: no-repeat;
-}
+xxxxxxxxxxxxxxx {}
 
-.footerhouses.aligncenter {
-	margin-bottom: 0;
-}
+// Screen Size Break Points
 
-footer {
-	color: $white;
-
-	h4.title.is-4 {
-		color: $white;
-		font-size: 20px;
-		font-weight: bold;
-		text-transform: uppercase;
-		margin-bottom: 12px;
-
-	}
-
-	h5.title.is-5 {
-		color: $lightblue;
-		font-size: 14px;
-		font-weight: bold;
-		text-transform: uppercase;
-		margin-bottom: 12px;
-	}
-
-	p {
-		font-size: 14px;
-		font-weight: 600;
-		margin-bottom: 12px;
-	}
-
-	a,
-	a:visited {
-		color: $white;
-	}
-
-	ul {
-		a {
-			text-transform: uppercase;
-			font-size: 12px;
-			font-weight: normal;
-		}
-	}
-
-	.copyrightsection {
-		p {
-		font-size: 12px;
-		font-weight: normal;
-		}
-	}
-
-	hr {
-		background-color: $lightblue;
-	}
-
-	// Footer Newsletter Form
-	.ctct-inline-form {
-		.ctct-form-embed.form_0 .ctct-form-defaults {
-			background-color: transparent;
-			padding: 0;
-			font-family: $family-primary;
-		}
-
-		.ctct-form-embed.form_0 .ctct-form-defaults .ctct-form-text, .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-label, .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-listname, .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-lists-legend, .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-date-slash, .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text, .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text .ctct-form-footer-link, .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text .ctct-form-footer-privacy-link {
-			color: #fff;
-		}
-
-		div.ctct-form-embed form.ctct-form-custom .ctct-form-required:before {
-			display: none;
-		}
-
-		div.ctct-form-embed form.ctct-form-custom label.ctct-form-label {
-			font-size: 14px;
-		}
-
-		div.ctct-form-embed form.ctct-form-custom button.ctct-form-button {
-			border-radius: 0 !important;
-			border: none !important;
-			color: $white;
-			font-weight: $weight-bold;
-			text-transform: uppercase; 
-			font-size: 15px;
-			letter-spacing: 1px;
-			width: auto;
-		}
-
-		.ctct-form-embed.form_0 .ctct-form-defaults .ctct-form-header {
-			color: #ffffff;
-		}
-
-		.g-recaptcha {
-			display: none;
-		}
-	}
-
-	.level-item {
-		float: left;
-	}
-}
-
-.footertopfeature {
-	background-color: $lightblue;
-
-	.title.is-2,
-	.title {
-		color: $white;
-		padding-right: 25px;
-	}
-
-	.button {
-		margin-top: 3px;
-	}
-}
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 1201px) {}
 
 
-@media screen and (max-width: 768px) {
-
-	.footertopfeature {
-	
-		.title.is-2
-		,
-		.title {
-			font-size: 28px;
-			padding-right: 0;
-		}
-
-	}
-
-}
-
-.socialmediafeature .level {
-	display: flex;
-}
-
-
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
@@ -797,16 +466,10 @@ $github-invert: findColorInvert($github);
 
 // 5. Add new color variables to the color map.
 @import "../sass/bulma/sass/utilities/derived-variables";
-$addColors: (
-  "twitter":($twitter, $twitter-invert),
-  "linkedin": ($linkedin, $linkedin-invert),
-  "github": ($github, $github-invert)
-);
+$addColors: ("twitter":($twitter, $twitter-invert),
+	"linkedin": ($linkedin, $linkedin-invert),
+	"github": ($github, $github-invert));
 $colors: map-merge($colors, $addColors);
 
 // 6. Import the rest of Bulma
 @import "../sass/bulma/bulma";
-
-
-
-
