@@ -22,9 +22,8 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-
 // Import collection of WordPress Sass
-@import "../sass/bulma/sass/utilities/wordpressimports";
+@import "../sass/wordpressimports";
 
 // Import the initial variables
 @import "../sass/bulma/sass/utilities/initial-variables";
@@ -33,27 +32,72 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 // Table Of Contents
 // Colors
-// Titles
+// Sass Variables
 // General
-// Buttons
-// Navigation
-// Hero template
-// Page template
-// Main Content Area
-// Sidebar
-// Home Page
+// Titles
 // Header
 // Footer
+// Home Page
+// Page Template
+// Sidebar
+// Main Content Area
+// Page Particle
+// Buttons
+// Navigation
+// Hero Template
 // Screen Size Break Points
 
 
-
 // Colors
-$darkbluetitles: #3E485C;
 $darkblue: #36475D;
 $lightblue: #34AFC8;
-$salmon: #F26D69;
-$limegreen: #BBD86F;
+$salmon: #F36F57;
+$teal: #00a388;
+
+// Set the derived variables
+// Use the new pink as the primary color
+$primary: $darkblue;
+$primary-invert: $white;
+
+// Setup your Custom Colors
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+
+// Add new color variables to the color map.
+@import "../sass/bulma/sass/utilities/derived-variables";
+$addColors: ("twitter":($twitter, $twitter-invert),
+	"linkedin": ($linkedin, $linkedin-invert),
+	"github": ($github, $github-invert));
+$colors: map-merge($colors, $addColors);
+
+// Sass Variables
+$family-serif: 'Montserrat',
+sans-serif;
+$family-primary: $family-serif;
+$text: $black;
+$body-size: 18px;
+$body-weight: 300;
+$body-line-height: 1.666;
+$section-padding: 65px 35px;
+$desktop: 1138px+(2 * $gap);
+$widescreen: 1138px+(2 * $gap);
+$fullhd: 1138px+(2 * $gap);
+
+// General
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+.post,
+.page {
+	margin: 0;
+}
 
 a:visited {
 	color: $black;
@@ -87,7 +131,7 @@ a:visited {
 	margin-bottom: 0;
 }
 
-$primary: $darkbluetitles;
+$primary: $teal;
 
 button.is-salmon {
 	background-color: $salmon;
@@ -97,25 +141,6 @@ button.is-salmon {
 nav .is-lightblue.navbar-item a {
 	color: $lightblue;
 }
-
-
-// Add a serif family
-$family-serif: 'Montserrat',
-sans-serif;
-// Use the new serif family
-$family-primary: $family-serif;
-
-$text: $black;
-$body-size: 18px;
-$body-weight: 300;
-$body-line-height: 1.666;
-
-$section-padding: 65px 35px;
-
-$desktop: 1138px+(2 * $gap);
-$widescreen: 1138px+(2 * $gap);
-$fullhd: 1138px+(2 * $gap);
-
 
 // Titles
 h1 {
@@ -131,21 +156,23 @@ h1.title {
 	font-weight: 900;
 }
 
+h2,
 h2.title,
 .entry-content h2 {
-	color: $darkbluetitles;
+	color: $teal;
 	font-weight: $weight-semibold;
 	font-size: 36px;
 
 	a {
-		color: $darkbluetitles;
+		color: $teal;
 	}
 }
 
+h3,
 h3.title,
 h3.hrf-title,
 .entry-content h3 {
-	color: $darkbluetitles;
+	color: $teal;
 	font-weight: $weight-bold;
 	font-size: 38px;
 }
@@ -159,9 +186,9 @@ h3.title.is-lightblue a {
 	color: $lightblue;
 }
 
-h3.title.is-limegreen,
-h3.title.is-limegreen a {
-	color: $limegreen;
+h3.title.is-teal,
+h3.title.is-teal a {
+	color: $teal;
 }
 
 h3.title.is-salmon,
@@ -176,25 +203,76 @@ p.subtitle {
 	font-size: 24px;
 }
 
-// General
+// Header
 
-html,
-body {
-	overflow-x: hidden;
+section.headersection {
+	padding-top: 40px;
+	padding-bottom: 33px;
 }
 
-.post,
-.page {
-	margin: 0;
+// Footer
+
+xxxxxxxxxxxxxxx {}
+
+// Home Page
+
+// Page Template
+
+// Sidebar
+
+.sidebar {
+	p.subtitle {
+		color: $salmon;
+		font-size: 18px;
+	}
+
+	.pageparticle {
+		margin-bottom: 115px;
+	}
+
+	.pageparticle:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
-section.announcementbar {
-	background-color: $darkblue;
-	color: $white;
-	padding-top: 15px;
-	padding-bottom: 15px;
+
+// Main Content Area
+
+.maincontentarea {
+
+	p {
+		padding-bottom: 12px;
+	}
+
+	.pageparticle {
+		border-bottom: 1px solid $salmon;
+		padding-top: 38px;
+		padding-bottom: 60px;
+	}
+
+	.pageparticle:first-of-type {
+		border-bottom: 1px solid $salmon;
+		padding-top: 0;
+		padding-bottom: 60px;
+	}
+
+	.pageparticle:last-of-type {
+		border-bottom: 0 solid $salmon;
+		padding-top: 38px;
+		padding-bottom: 60px;
+	}
+
+	hr {
+		background-color: $salmon;
+		margin-top: 38px;
+		margin-bottom: 60px;
+	}
+
+	margin-bottom: 1rem;
+
 }
 
+// Page Particle
 .pageparticle {
 	p {
 		padding-bottom: 12px;
@@ -229,9 +307,9 @@ section .button:hover,
 	background-color: $lightblue;
 }
 
-.button.is-limegreen {
+.button.is-teal {
 	color: $white;
-	background-color: $limegreen;
+	background-color: $teal;
 }
 
 .button.is-salmon {
@@ -310,10 +388,10 @@ nav li.button {
 }
 
 
-// Hero template
+// Hero Template
 
 .hero nav.tabs.is-boxed {
-	background-color: $darkbluetitles;
+	background-color: $teal;
 
 	ul {
 		align-items: center;
@@ -332,109 +410,6 @@ nav li.button {
 	}
 }
 
-// Page template
-
-// Main Content Area
-
-.maincontentarea {
-
-	p {
-		padding-bottom: 12px;
-	}
-
-	.pageparticle {
-		border-bottom: 1px solid $salmon;
-		padding-top: 38px;
-		padding-bottom: 60px;
-	}
-
-	.pageparticle:first-of-type {
-		border-bottom: 1px solid $salmon;
-		padding-top: 0;
-		padding-bottom: 60px;
-	}
-
-	.pageparticle:last-of-type {
-		border-bottom: 0 solid $salmon;
-		padding-top: 38px;
-		padding-bottom: 60px;
-	}
-
-	hr {
-		background-color: $salmon;
-		margin-top: 38px;
-		margin-bottom: 60px;
-	}
-
-	margin-bottom: 1rem;
-
-}
-
-
-// Sidebar
-
-.sidebar {
-	p.subtitle {
-		color: $salmon;
-		font-size: 18px;
-	}
-
-	.pageparticle {
-		margin-bottom: 115px;
-	}
-
-	.pageparticle:last-of-type {
-		margin-bottom: 0;
-	}
-
-	.pageparticle {
-		.title.is-3 {
-			font-size: 28px;
-		}
-
-		p {
-			padding-bottom: 25px;
-		}
-
-		.quotefeature {
-			h3 {
-				font-size: 32px;
-				font-weight: normal;
-				font-family: Georgia, 'Times New Roman', Times, serif;
-				color: $lightblue;
-			}
-
-			p {
-				padding-bottom: 0;
-				text-align: center;
-				font-size: 14px;
-				font-weight: 500;
-			}
-
-		}
-	}
-
-	.pageparticle {
-		p:last-of-type {
-			padding-bottom: 25px;
-		}
-	}
-}
-
-// Home Page
-
-
-// Header
-
-section.headersection {
-	padding-top: 40px;
-	padding-bottom: 33px;
-
-}
-
-// Footer
-
-xxxxxxxxxxxxxxx {}
 
 // Screen Size Break Points
 
@@ -442,34 +417,26 @@ xxxxxxxxxxxxxxx {}
 @media screen and (max-width: 1201px) {}
 
 
-// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-// 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $darkblue;
-$primary-invert: $white;
-
-
-// 4. Setup your Custom Colors
-$linkedin: #0077b5;
-$linkedin-invert: findColorInvert($linkedin);
-$twitter: #55acee;
-$twitter-invert: findColorInvert($twitter);
-$github: #333;
-$github-invert: findColorInvert($github);
-
-// 5. Add new color variables to the color map.
-@import "../sass/bulma/sass/utilities/derived-variables";
-$addColors: ("twitter":($twitter, $twitter-invert),
-	"linkedin": ($linkedin, $linkedin-invert),
-	"github": ($github, $github-invert));
-$colors: map-merge($colors, $addColors);
-
 // 6. Import the rest of Bulma
 @import "../sass/bulma/bulma";
+
+
+// CC Site Only
+
+.homesection {
+	h1 {
+		text-align: left;
+	}
+}
+.tealsection {
+	background-color: $teal;
+	.title {
+		color: $white;
+	}
+}
+.whitesection {
+	background-color: $white;
+}
+.salmonsection {
+	background-color: $salmon;
+}

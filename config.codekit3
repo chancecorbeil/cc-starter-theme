@@ -17,6 +17,22 @@
 		"oAP": "/.eslintrc",
 		"oF": 0
 		},
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitattributes",
+		"oF": 0
+		},
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/.stylelintrc.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -33,20 +49,12 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
-	"/archive-events.php": {
+	"/archive-examples.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/archive-events.php",
-		"oF": 0
-		},
-	"/archive-news.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/archive-news.php",
+		"oAP": "/archive-examples.php",
 		"oF": 0
 		},
 	"/archive.php": {
@@ -145,14 +153,6 @@
 		"oAP": "/inc/template-tags.php",
 		"oF": 0
 		},
-	"/index-backup.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/index-backup.php",
-		"oF": 0
-		},
 	"/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -213,46 +213,6 @@
 		"oAP": "/build/node_modules",
 		"oF": 0
 		},
-	"/old/old-page-donate.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/old/old-page-donate.php",
-		"oF": 0
-		},
-	"/old/old-page-faqs.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/old/old-page-faqs.php",
-		"oF": 0
-		},
-	"/old/old-page-template-bulma.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/old/old-page-template-bulma.php",
-		"oF": 0
-		},
-	"/old/old-single.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/old/old-single.php",
-		"oF": 0
-		},
-	"/old/single-news.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/old/single-news.php",
-		"oF": 0
-		},
 	"/package-lock.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -268,14 +228,6 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
-		},
-	"/page-contact.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-contact.php",
-		"oF": 0
 		},
 	"/page-theme-settings.php": {
 		"cB": 0,
@@ -320,13 +272,18 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/readme.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/readme.txt",
-		"oF": 0
+	"/sass/_wordpressimports.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/_wordpressimports.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
 		},
 	"/sass/abstracts/_abstracts.scss": {
 		"aP": 0,
@@ -1691,12 +1648,12 @@
 		"oAP": "/sidebar.php",
 		"oF": 0
 		},
-	"/single-events.php": {
+	"/single-examples.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/single-events.php",
+		"oAP": "/single-examples.php",
 		"oF": 0
 		},
 	"/single.php": {
@@ -1740,12 +1697,20 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/template-blankpage.php": {
+	"/template-cccom-homepage.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/template-blankpage.php",
+		"oAP": "/template-cccom-homepage.php",
+		"oF": 0
+		},
+	"/template-fullwidthpage.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-fullwidthpage.php",
 		"oF": 0
 		},
 	"/template-parts/content-none.php": {
@@ -1787,10 +1752,10 @@
 	},
 "projectAttributes": {
 	"creationDate": 621497517.07642198,
-	"displayValue": "wordpress-theme-oct-2020",
+	"displayValue": "cc-starter-theme",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets-ucla",
-	"iconImageWasSetByUser": 0
+	"iconImageName": "meme-ariel",
+	"iconImageWasSetByUser": 1
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

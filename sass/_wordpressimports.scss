@@ -1,5 +1,5 @@
 // Import variables and mixins.
-@import "sass/abstracts/abstracts";
+@import "abstracts/abstracts";
 
 /*--------------------------------------------------------------
 # Generic
@@ -7,16 +7,16 @@
 
 /* Normalize
 --------------------------------------------- */
-@import "sass/generic/normalize";
+@import "generic/normalize";
 
 /* Box sizing
 --------------------------------------------- */
-@import "sass/generic/box-sizing";
+@import "generic/box-sizing";
 
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
-@import "sass/base/base";
+@import "base/base";
 
 /*--------------------------------------------------------------
 # Layouts
@@ -27,7 +27,7 @@
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
-@import "sass/components/components";
+@import "components/components";
 
 /*--------------------------------------------------------------
 # Plugins
@@ -35,7 +35,7 @@
 
 /* Jetpack infinite scroll
 --------------------------------------------- */
-@import "sass/plugins/jetpack/infinite-scroll";
+@import "plugins/jetpack/infinite-scroll";
 
 /*--------------------------------------------------------------
 # Utilities
@@ -43,8 +43,8 @@
 
 /* Accessibility
 --------------------------------------------- */
-@import "sass/utilities/accessibility";
+@import "utilities/accessibility";
 
 /* Alignments
 --------------------------------------------- */
-@import "sass/utilities/alignments";
+@import "utilities/alignments";

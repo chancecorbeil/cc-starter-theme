@@ -23,33 +23,6 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Generic
-	- Normalize
-	- Box sizing
-# Base
-	- Typography
-	- Elements
-	- Links
-	- Forms
-## Layouts
-# Components
-	- Navigation
-	- Posts and pages
-	- Comments
-	- Widgets
-	- Media
-	- Captions
-	- Galleries
-# plugins
-	- Jetpack infinite scroll
-# Utilities
-	- Accessibility
-	- Alignments
-
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
 /* Normalize
@@ -912,6 +885,16 @@ textarea {
   margin-bottom: 1.5em;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+.post,
+.page {
+  margin: 0;
+}
+
 a:visited {
   color: #0a0a0a;
 }
@@ -930,11 +913,12 @@ a:visited {
 .entry-content a {
   color: #0a0a0a;
   text-decoration: underline;
-  text-decoration-color: #F26D69;
-  text-decoration-thickness: 3px;
+  text-decoration-color: #F36F57;
 }
 
-.page-content, .entry-content, .entry-summary {
+.page-content,
+.entry-content,
+.entry-summary {
   margin: 0;
 }
 
@@ -944,7 +928,7 @@ a:visited {
 }
 
 button.is-salmon {
-  background-color: #F26D69;
+  background-color: #F36F57;
   color: #ffffff;
 }
 
@@ -965,21 +949,24 @@ h1.title {
   font-weight: 900;
 }
 
+h2,
 h2.title,
 .entry-content h2 {
-  color: #3E485C;
+  color: #00a388;
   font-weight: 600;
   font-size: 36px;
 }
+h2 a,
 h2.title a,
 .entry-content h2 a {
-  color: #3E485C;
+  color: #00a388;
 }
 
+h3,
 h3.title,
 h3.hrf-title,
 .entry-content h3 {
-  color: #3E485C;
+  color: #00a388;
   font-weight: 700;
   font-size: 38px;
 }
@@ -993,14 +980,14 @@ h3.title.is-lightblue a {
   color: #34AFC8;
 }
 
-h3.title.is-limegreen,
-h3.title.is-limegreen a {
-  color: #BBD86F;
+h3.title.is-teal,
+h3.title.is-teal a {
+  color: #00a388;
 }
 
 h3.title.is-salmon,
 h3.title.is-salmon a {
-  color: #F26D69;
+  color: #F36F57;
 }
 
 p.subtitle {
@@ -1010,28 +997,55 @@ p.subtitle {
   font-size: 24px;
 }
 
-html,
-body {
-  overflow-x: hidden;
+section.headersection {
+  padding-top: 40px;
+  padding-bottom: 33px;
 }
 
-.hrf-faq-list article:last-of-type {
-  display: none !important;
+.sidebar p.subtitle {
+  color: #F36F57;
+  font-size: 18px;
+}
+.sidebar .pageparticle {
+  margin-bottom: 115px;
+}
+.sidebar .pageparticle:last-of-type {
+  margin-bottom: 0;
 }
 
-.hrf-faq-list p {
+.maincontentarea {
+  margin-bottom: 1rem;
+}
+.maincontentarea p {
+  padding-bottom: 12px;
+}
+.maincontentarea .pageparticle {
+  border-bottom: 1px solid #F36F57;
+  padding-top: 38px;
+  padding-bottom: 60px;
+}
+.maincontentarea .pageparticle:first-of-type {
+  border-bottom: 1px solid #F36F57;
+  padding-top: 0;
+  padding-bottom: 60px;
+}
+.maincontentarea .pageparticle:last-of-type {
+  border-bottom: 0 solid #F36F57;
+  padding-top: 38px;
+  padding-bottom: 60px;
+}
+.maincontentarea hr {
+  background-color: #F36F57;
+  margin-top: 38px;
+  margin-bottom: 60px;
+}
+
+.pageparticle p {
   padding-bottom: 12px;
 }
 
-.post, .page {
-  margin: 0;
-}
-
-section.announcementbar {
-  background-color: #36475D;
-  color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.pageparticle p:last-of-type {
+  padding-bottom: 0;
 }
 
 .button {
@@ -1044,7 +1058,8 @@ section.announcementbar {
   letter-spacing: 1px;
 }
 
-section .button:hover, .button.is-hovered {
+section .button:hover,
+.button.is-hovered {
   color: white;
 }
 
@@ -1053,14 +1068,14 @@ section .button:hover, .button.is-hovered {
   background-color: #34AFC8;
 }
 
-.button.is-limegreen {
+.button.is-teal {
   color: white;
-  background-color: #BBD86F;
+  background-color: #00a388;
 }
 
 .button.is-salmon {
   color: white;
-  background-color: #F26D69;
+  background-color: #F36F57;
 }
 
 nav a,
@@ -1123,7 +1138,7 @@ nav .navbar-menu li a.is-lightblue.navbar-item a {
   }
 }
 .hero nav.tabs.is-boxed {
-  background-color: #3E485C;
+  background-color: #00a388;
 }
 .hero nav.tabs.is-boxed ul {
   align-items: center;
@@ -1137,292 +1152,6 @@ nav .navbar-menu li a.is-lightblue.navbar-item a {
   text-transform: uppercase;
   font-size: 15px;
   padding: 18px 23px;
-}
-
-.maincontentarea {
-  margin-bottom: 1rem;
-}
-.maincontentarea p {
-  padding-bottom: 12px;
-}
-.maincontentarea .pageparticle {
-  border-bottom: 1px solid #F26D69;
-  padding-top: 38px;
-  padding-bottom: 60px;
-}
-.maincontentarea .pageparticle:first-of-type {
-  border-bottom: 1px solid #F26D69;
-  padding-top: 0;
-  padding-bottom: 60px;
-}
-.maincontentarea .pageparticle:last-of-type {
-  border-bottom: 0 solid #F26D69;
-  padding-top: 38px;
-  padding-bottom: 60px;
-}
-.maincontentarea hr {
-  background-color: #F26D69;
-  margin-top: 38px;
-  margin-bottom: 60px;
-}
-
-.newsarticle .newscontent {
-  padding-bottom: 25px;
-}
-
-.newssidebarparticle {
-  display: none;
-}
-
-.post-type-archive-news .newssidebarparticle {
-  display: block;
-}
-
-.sidebar p.subtitle {
-  color: #F26D69;
-  font-size: 18px;
-}
-.sidebar .pageparticle {
-  margin-bottom: 115px;
-}
-.sidebar .pageparticle:last-of-type {
-  margin-bottom: 0;
-}
-.sidebar .pageparticle .title.is-3 {
-  font-size: 28px;
-}
-.sidebar .pageparticle p {
-  padding-bottom: 25px;
-}
-.sidebar .pageparticle .socialmediafeature {
-  background-color: #BBD86F;
-  padding: 35px;
-  text-align: center;
-}
-.sidebar .pageparticle .quotefeature h3 {
-  font-size: 32px;
-  font-weight: normal;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #34AFC8;
-}
-.sidebar .pageparticle .quotefeature p {
-  padding-bottom: 0;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 500;
-}
-.sidebar .pageparticle p:last-of-type {
-  padding-bottom: 25px;
-}
-
-@media screen and (min-width: 769px) {
-  .sidebar {
-    margin-top: 155px;
-  }
-}
-.pageparticle p {
-  padding-bottom: 12px;
-}
-
-.pageparticle p:last-of-type {
-  padding-bottom: 0;
-}
-
-.homepagesections .section {
-  padding: 40px 0;
-}
-.homepagesections .section p {
-  font-size: 20px;
-  font-weight: 600;
-  color: #36475D;
-  padding-bottom: 40px;
-}
-.homepagesections .section h3 {
-  margin-bottom: 45px;
-}
-
-section.homealtsection h3 {
-  text-transform: uppercase;
-}
-
-section.widehomesection {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-section.newssection h2.title.newsspotlights {
-  font-size: 53px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #34AFC8;
-  margin-bottom: 0;
-}
-section.newssection .seeallnews {
-  text-align: right;
-}
-section.newssection .level {
-  margin-bottom: 62px;
-}
-section.newssection .level a,
-section.newssection .level a:visited {
-  font-size: 18px;
-  font-weight: 500;
-  color: #3E485C;
-}
-section.newssection .newssecondcolumn {
-  border-left: 2px solid #34AFC8;
-}
-section.newssection .pageparticle h3.title {
-  font-size: 30px;
-  font-weight: bold;
-  color: #3E485C;
-  margin-bottom: 14px;
-}
-section.newssection .pageparticle h3.title a {
-  color: #3E485C;
-}
-section.newssection .pageparticle p.sourceanddate {
-  font-size: 16px;
-  font-weight: bold;
-  color: #F26D69;
-  padding-bottom: 25px;
-}
-section.newssection .pageparticle p {
-  padding-bottom: 35px;
-}
-
-.home .footerhouses {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .homepagesections .section h3.title {
-    margin-bottom: 23px;
-    font-size: 28px;
-  }
-
-  section.newssection .seeallnews {
-    text-align: center;
-  }
-  section.newssection h2.title.newsspotlights {
-    text-align: center;
-    font-size: 28px;
-  }
-  section.newssection .newssecondcolumn {
-    border-left: 0px solid #34AFC8;
-  }
-}
-section.headersection {
-  padding-top: 40px;
-  padding-bottom: 33px;
-}
-
-section.footersection {
-  background-color: #36475D;
-  padding-top: 62px;
-  padding-bottom: 62px;
-  background-image: url(http://paneltopagetheme.com/wp-content/uploads/2020/09/footer-bg.png);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-}
-
-.footerhouses.aligncenter {
-  margin-bottom: 0;
-}
-
-footer {
-  color: white;
-}
-footer h4.title.is-4 {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-footer h5.title.is-5 {
-  color: #34AFC8;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-footer p {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-footer a,
-footer a:visited {
-  color: white;
-}
-footer ul a {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: normal;
-}
-footer .copyrightsection p {
-  font-size: 12px;
-  font-weight: normal;
-}
-footer hr {
-  background-color: #34AFC8;
-}
-footer .ctct-inline-form .ctct-form-embed.form_0 .ctct-form-defaults {
-  background-color: transparent;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-}
-footer .ctct-inline-form .ctct-form-embed.form_0 .ctct-form-defaults .ctct-form-text, footer .ctct-inline-form .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-label, footer .ctct-inline-form .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-listname, footer .ctct-inline-form .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-lists-legend, footer .ctct-inline-form .ctct-form-embed.form_0 .ctct-form-custom .ctct-form-date-slash, footer .ctct-inline-form .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text, footer .ctct-inline-form .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text .ctct-form-footer-link, footer .ctct-inline-form .ctct-form-embed.form_0 .ctct-form-defaults .ctct-gdpr-text .ctct-form-footer-privacy-link {
-  color: #fff;
-}
-footer .ctct-inline-form div.ctct-form-embed form.ctct-form-custom .ctct-form-required:before {
-  display: none;
-}
-footer .ctct-inline-form div.ctct-form-embed form.ctct-form-custom label.ctct-form-label {
-  font-size: 14px;
-}
-footer .ctct-inline-form div.ctct-form-embed form.ctct-form-custom button.ctct-form-button {
-  border-radius: 0 !important;
-  border: none !important;
-  color: white;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 15px;
-  letter-spacing: 1px;
-  width: auto;
-}
-footer .ctct-inline-form .ctct-form-embed.form_0 .ctct-form-defaults .ctct-form-header {
-  color: #ffffff;
-}
-footer .ctct-inline-form .g-recaptcha {
-  display: none;
-}
-footer .level-item {
-  float: left;
-}
-
-.footertopfeature {
-  background-color: #34AFC8;
-}
-.footertopfeature .title.is-2,
-.footertopfeature .title {
-  color: white;
-  padding-right: 25px;
-}
-.footertopfeature .button {
-  margin-top: 3px;
-}
-
-@media screen and (max-width: 768px) {
-  .footertopfeature .title.is-2,
-.footertopfeature .title {
-    font-size: 28px;
-    padding-right: 0;
-  }
-}
-.socialmediafeature .level {
-  display: flex;
 }
 
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
@@ -1813,7 +1542,7 @@ fieldset {
 pre {
   -webkit-overflow-scrolling: touch;
   background-color: whitesmoke;
-  color: #0a0a0a;
+  color: #4a4a4a;
   font-size: 0.875em;
   overflow-x: auto;
   padding: 1.25rem 1.5rem;
@@ -3950,7 +3679,7 @@ a.box:active {
 }
 .table td.is-selected,
 .table th.is-selected {
-  background-color: #36475D;
+  background-color: #00a388;
   color: white;
 }
 .table td.is-selected a,
@@ -3970,7 +3699,7 @@ a.box:active {
   text-align: inherit;
 }
 .table tr.is-selected {
-  background-color: #36475D;
+  background-color: #00a388;
   color: white;
 }
 .table tr.is-selected a,
@@ -12161,4 +11890,23 @@ a.has-text-github:hover, a.has-text-github:focus {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem;
+}
+
+.homesection h1 {
+  text-align: left;
+}
+
+.tealsection {
+  background-color: #00a388;
+}
+.tealsection .title {
+  color: white;
+}
+
+.whitesection {
+  background-color: white;
+}
+
+.salmonsection {
+  background-color: #F36F57;
 }
