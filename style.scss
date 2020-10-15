@@ -53,6 +53,7 @@ $darkblue: #36475D;
 $lightblue: #34AFC8;
 $salmon: #F36F57;
 $teal: #00a388;
+$brown: #5a372b;
 
 // Set the derived variables
 // Use the new pink as the primary color
@@ -423,14 +424,36 @@ nav li.button {
 
 // CC Site Only
 
+.page-template-template-cccom-homepage header {
+	display: none;
+}
+
 .homesection {
-	h1 {
-		text-align: left;
+
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+	.imagehomeselfie {
+		position: absolute;
+		top: 25px;
+		max-width: 280px;
 	}
+
+	h1.title.is-1 {
+		text-align: left;
+		margin-bottom: 10px;
+	}
+}
+
+.sidebarnavigation {
+background-color: $brown;
 }
 .tealsection {
 	background-color: $teal;
 	.title {
+		color: $white;
+	}
+	p {
 		color: $white;
 	}
 }
@@ -439,4 +462,23 @@ nav li.button {
 }
 .salmonsection {
 	background-color: $salmon;
+}
+
+.panel-block {
+    background-color:$white;
+}
+
+.panel.simplepanel {
+	border-radius: 0;
+	box-shadow: none;
+
+	.panel-block:last-child {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+}
+
+.textalignright {
+	text-align: right;
 }

@@ -11892,14 +11892,35 @@ a.has-text-github:hover, a.has-text-github:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
-.homesection h1 {
+.page-template-template-cccom-homepage header {
+  display: none;
+}
+
+.homesection {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.homesection .imagehomeselfie {
+  position: absolute;
+  top: 25px;
+  max-width: 280px;
+}
+.homesection h1.title.is-1 {
   text-align: left;
+  margin-bottom: 10px;
+}
+
+.sidebarnavigation {
+  background-color: #5a372b;
 }
 
 .tealsection {
   background-color: #00a388;
 }
 .tealsection .title {
+  color: white;
+}
+.tealsection p {
   color: white;
 }
 
@@ -11909,4 +11930,21 @@ a.has-text-github:hover, a.has-text-github:focus {
 
 .salmonsection {
   background-color: #F36F57;
+}
+
+.panel-block {
+  background-color: white;
+}
+
+.panel.simplepanel {
+  border-radius: 0;
+  box-shadow: none;
+}
+.panel.simplepanel .panel-block:last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.textalignright {
+  text-align: right;
 }

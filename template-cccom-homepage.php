@@ -18,14 +18,15 @@ get_header();
   <section class="section homesection salmonsection">
     <div class="container">
       <div class="columns">
-        <div class="column is-12">
+        <div class="column is-8">
           <h1 class="title is-1">Chance Corbeil</h1>
           <div class="title is-4"> Full stack developer + front end specialist</div>
-          <div>
-          <figure class="image is-128x128">
-  <img class="is-rounded" src="http://trinityrising.local/wp-content/uploads/2020/10/cropped-chance-icon-e1602550999357-1.jpg">
-</figure>
-          </div>
+        </div>
+        <div class="column is-4">
+            <figure class="image imagehomeselfie">
+              <img class="is-rounded"
+                src="http://trinityrising.local/wp-content/uploads/2020/10/cropped-chance-icon-e1602550999357-1.jpg">
+            </figure>
         </div>
       </div>
     </div>
@@ -44,14 +45,65 @@ get_header();
         <div class="column is-4">
           <h3>A one-stop developer</h3>
           <p>I have a wide range of design and development skills from SEO to ecommerce.</p>
+          <h3>WordPress + WooCommerce</h3>
+          <p>I specialize in WordPress development.</p>
+
         </div>
         <div class="column is-4">
-          <h3>A one-stop developer</h3>
-          <p>I have a wide range of design and development skills from SEO to ecommerce.</p>
+        <article class="panel simplepanel">
+            <a class="panel-block">
+              <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              172 websites built
+            </a>
+            <a class="panel-block">
+              <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              11 years experience
+            </a>
+            <a class="panel-block">
+              <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              WordPress Expert
+            </a>
+            <a class="panel-block">
+              <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              Studying React, Gatsby
+            </a>
+          </article>
         </div>
         <div class="column is-4">
-          <h3>A one-stop developer</h3>
-          <p>I have a wide range of design and development skills from SEO to ecommerce.</p>
+          <article class="panel simplepanel">
+            <a class="panel-block">
+              <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              Resume
+            </a>
+            <a class="panel-block">
+              <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              Contact Chance
+            </a>
+            <a class="panel-block">
+              <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              My Tech Stack
+            </a>
+            <a class="panel-block">
+              <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              Project Examples
+            </a>
+          </article>
         </div>
       </div>
     </div>
@@ -63,7 +115,7 @@ get_header();
     <div class="container">
       <div class="columns">
         <div class="column is-12">
-          <h2 class="title is-2">Websites I built</h2>
+          <h2 class="title is-2 has-text-centered">Websites I built</h2>
         </div>
       </div>
       <div class="columns">
@@ -75,12 +127,56 @@ get_header();
   </section>
   <!-- End: Section #3 -->
 
-  <!-- Begin: Section #4 -->
-  <section class="section homesection whitesection">
+    <!-- Begin: Section #5 -->
+    <section class="section homesection whitesection">
     <div class="container">
       <div class="columns">
         <div class="column is-12">
-          <h2 class="title is-2">Tech Stack</h2>
+          <h2 class="title is-2 has-text-centered">Project Links</h2>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-12">
+          <div class="tabs is-toggle is-fullwidth is-primary">
+            <ul>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+                  <span>OSC Elate</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+                  <span>CC Starter Theme</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+                  <span>Bridge Meadows</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End: Section #5 -->
+
+  <!-- Begin: Section #4 -->
+  <section class="section homesection tealsection">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-12">
+          <h2 class="title is-2 has-text-centered">Tech Stack</h2>
         </div>
       </div>
       <div class="columns">
@@ -100,6 +196,12 @@ get_header();
                 <i class="fas fa-book" aria-hidden="true"></i>
               </span>
               CSS
+            </a>
+            <a class="panel-block">
+              <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              HTML
             </a>
             <a class="panel-block">
               <span class="panel-icon">
@@ -270,64 +372,6 @@ get_header();
   <!-- End: Section #4 -->
 
 
-  <!-- Begin: Section #5 -->
-  <section class="section homesection tealsection">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-12">
-          <h2 class="title is-2">Projects You Should Check Out</h2>
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column is-12">
-          <div class="tabs is-toggle is-fullwidth is-primary">
-            <ul>
-              <li class="is-active">
-                <a>
-                  <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
-                  <span>OSC Elate</span>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
-                  <span>CC Starter Theme</span>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
-                  <span>Videos</span>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
-                  <span>Documents</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column is-4">
-          <h3>OSC Elate</h3>
-          <p>I have a wide range of design and development skills from SEO to ecommerce.</p>
-        </div>
-        <div class="column is-4">
-          <h3>CC Starter Theme</h3>
-          <p>I have a wide range of design and development skills from SEO to ecommerce.</p>
-        </div>
-        <div class="column is-4">
-          <h3>A one-stop developer</h3>
-          <p>I have a wide range of design and development skills from SEO to ecommerce.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End: Section #5 -->
-
   <!-- Begin: Section #6 -->
   <section class="section homesection whitesection">
     <div class="container">
@@ -335,90 +379,90 @@ get_header();
         <div class="column is-6">
           <h2 class="title is-2">Contact Me</h2>
           <div>
-          <div class="field">
-  <label class="label">Name</label>
-  <div class="control">
-    <input class="input" type="text" placeholder="Text input">
-  </div>
-</div>
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Text input">
+              </div>
+            </div>
 
-<div class="field">
-  <label class="label">Username</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="text" placeholder="Text input" value="bulma">
-    <span class="icon is-small is-left">
-      <i class="fas fa-user"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fas fa-check"></i>
-    </span>
-  </div>
-  <p class="help is-success">This username is available</p>
-</div>
+            <div class="field">
+              <label class="label">Username</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-check"></i>
+                </span>
+              </div>
+              <p class="help is-success">This username is available</p>
+            </div>
 
-<div class="field">
-  <label class="label">Email</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
-    <span class="icon is-small is-left">
-      <i class="fas fa-envelope"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fas fa-exclamation-triangle"></i>
-    </span>
-  </div>
-  <p class="help is-danger">This email is invalid</p>
-</div>
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </span>
+              </div>
+              <p class="help is-danger">This email is invalid</p>
+            </div>
 
-<div class="field">
-  <label class="label">Subject</label>
-  <div class="control">
-    <div class="select">
-      <select>
-        <option>Select dropdown</option>
-        <option>With options</option>
-      </select>
-    </div>
-  </div>
-</div>
+            <div class="field">
+              <label class="label">Subject</label>
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option>Select dropdown</option>
+                    <option>With options</option>
+                  </select>
+                </div>
+              </div>
+            </div>
 
-<div class="field">
-  <label class="label">Message</label>
-  <div class="control">
-    <textarea class="textarea" placeholder="Textarea"></textarea>
-  </div>
-</div>
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Textarea"></textarea>
+              </div>
+            </div>
 
-<div class="field">
-  <div class="control">
-    <label class="checkbox">
-      <input type="checkbox">
-      I agree to the <a href="#">terms and conditions</a>
-    </label>
-  </div>
-</div>
+            <div class="field">
+              <div class="control">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  I agree to the <a href="#">terms and conditions</a>
+                </label>
+              </div>
+            </div>
 
-<div class="field">
-  <div class="control">
-    <label class="radio">
-      <input type="radio" name="question">
-      Yes
-    </label>
-    <label class="radio">
-      <input type="radio" name="question">
-      No
-    </label>
-  </div>
-</div>
+            <div class="field">
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="question">
+                  Yes
+                </label>
+                <label class="radio">
+                  <input type="radio" name="question">
+                  No
+                </label>
+              </div>
+            </div>
 
-<div class="field is-grouped">
-  <div class="control">
-    <button class="button is-link">Submit</button>
-  </div>
-  <div class="control">
-    <button class="button is-link is-light">Cancel</button>
-  </div>
-</div>
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link">Submit</button>
+              </div>
+              <div class="control">
+                <button class="button is-link is-light">Cancel</button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="column is-6">
@@ -430,8 +474,8 @@ get_header();
   </section>
   <!-- End: Section #6 -->
 
-    <!-- Begin: Section #6 -->
-    <section class="section homesection whitesection">
+  <!-- Begin: Section #6 -->
+  <section class="section homesection whitesection">
     <div class="container">
       <div class="columns">
         <div class="column is-12">
@@ -443,7 +487,7 @@ get_header();
           <nav class="level">
             <div class="level-item has-text-centered">
               <div>
-                <p class="heading">Sites I've built</p>
+                <p class="heading">Websites I've built</p>
                 <p class="title">172</p>
               </div>
             </div>
@@ -461,8 +505,8 @@ get_header();
             </div>
             <div class="level-item has-text-centered">
               <div>
-                <p class="heading">Likes</p>
-                <p class="title">789</p>
+                <p class="heading">Resume</p>
+                <p class="title">Resume</p>
               </div>
             </div>
           </nav>
