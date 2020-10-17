@@ -263,12 +263,6 @@ xxxxxxxxxxxxxxx {}
 		padding-bottom: 60px;
 	}
 
-	hr {
-		background-color: $salmon;
-		margin-top: 38px;
-		margin-bottom: 60px;
-	}
-
 	margin-bottom: 1rem;
 
 }
@@ -424,7 +418,8 @@ nav li.button {
 
 // CC Site Only
 
-.page-template-template-cccom-homepage header {
+.page-template-template-cccom-homepage header,
+.page-template-template-cccom-homepagewsidebar header {
 	display: none;
 }
 
@@ -471,6 +466,8 @@ background-color: $brown;
 .panel.simplepanel {
 	border-radius: 0;
 	box-shadow: none;
+	position: relative;
+	top: -7px;
 
 	.panel-block:last-child {
 		border-bottom-left-radius: 0;
@@ -481,4 +478,42 @@ background-color: $brown;
 
 .textalignright {
 	text-align: right;
+}
+
+.resume {
+
+	background-color: $salmon;
+	padding-top: 1rem;
+
+	.container {
+		background-color: $white;
+		padding: 2rem 35px;
+	}
+
+	hr {
+		margin-bottom: 0;
+	}
+
+	.seeclients {
+		font-weight: 500;
+		background-color: $teal;
+		color: $white;
+	}
+
+	a {
+		color: $salmon;
+	}
+}
+
+.resumebutton {
+	background-color: $teal;
+		color: $white;
+}
+
+.displaynone {
+	display: none;
+}
+
+.displayblock {
+	display: block !important;
 }

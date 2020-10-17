@@ -1034,11 +1034,6 @@ section.headersection {
   padding-top: 38px;
   padding-bottom: 60px;
 }
-.maincontentarea hr {
-  background-color: #F36F57;
-  margin-top: 38px;
-  margin-bottom: 60px;
-}
 
 .pageparticle p {
   padding-bottom: 12px;
@@ -11892,7 +11887,8 @@ a.has-text-github:hover, a.has-text-github:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
-.page-template-template-cccom-homepage header {
+.page-template-template-cccom-homepage header,
+.page-template-template-cccom-homepagewsidebar header {
   display: none;
 }
 
@@ -11939,6 +11935,8 @@ a.has-text-github:hover, a.has-text-github:focus {
 .panel.simplepanel {
   border-radius: 0;
   box-shadow: none;
+  position: relative;
+  top: -7px;
 }
 .panel.simplepanel .panel-block:last-child {
   border-bottom-left-radius: 0;
@@ -11947,4 +11945,37 @@ a.has-text-github:hover, a.has-text-github:focus {
 
 .textalignright {
   text-align: right;
+}
+
+.resume {
+  background-color: #F36F57;
+  padding-top: 1rem;
+}
+.resume .container {
+  background-color: white;
+  padding: 2rem 35px;
+}
+.resume hr {
+  margin-bottom: 0;
+}
+.resume .seeclients {
+  font-weight: 500;
+  background-color: #00a388;
+  color: white;
+}
+.resume a {
+  color: #F36F57;
+}
+
+.resumebutton {
+  background-color: #00a388;
+  color: white;
+}
+
+.displaynone {
+  display: none;
+}
+
+.displayblock {
+  display: block !important;
 }
