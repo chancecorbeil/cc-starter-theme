@@ -11,10 +11,15 @@
 
 ?>
 
-		
-
-
 </div><!-- #page -->
+
+
+<script>
+function modalContact() {
+      var element = document.getElementById("modal");
+      element.classList.toggle("is-active");
+    }
+</script>
 
 <?php wp_footer(); ?>
 

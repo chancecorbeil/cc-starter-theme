@@ -1697,30 +1697,6 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/template-cccom-homepage wsidebar.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-cccom-homepage wsidebar.php",
-		"oF": 0
-		},
-	"/template-cccom-homepage.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-cccom-homepage.php",
-		"oF": 0
-		},
-	"/template-cccom-resume.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/template-cccom-resume.php",
-		"oF": 0
-		},
 	"/template-fullwidthpage.php": {
 		"cB": 0,
 		"ft": 8192,
