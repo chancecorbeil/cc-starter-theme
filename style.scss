@@ -231,34 +231,58 @@ xxxxxxxxxxxxxxx {}
 
 // Main Content Area
 
-.maincontentarea,
-.pageparticlecontainer {
+.maincontentarea
 
-	p {
-		padding-bottom: 12px;
-	}
-
-	.pageparticle {
-		border-bottom: 1px solid $salmon;
-		padding-top: 38px;
-		padding-bottom: 60px;
-	}
-
-	.pageparticle:first-of-type {
-		border-bottom: 1px solid $salmon;
-		padding-top: 0;
-		padding-bottom: 60px;
-	}
-
-	.pageparticle:last-of-type {
-		border-bottom: 0 solid $salmon;
-		padding-top: 38px;
-		padding-bottom: 60px;
-	}
-
+p {
+	padding-bottom: 12px;
 }
 
 // Page Particle
+
+.pageparticlecontainer {
+
+	.pageparticle {
+		border-bottom: 0 solid $primary;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.pageparticle:first-of-type {
+		border-bottom: 0 solid $primary;
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
+
+	.pageparticle:last-of-type {
+		border-bottom: 0 solid $primary;
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+
+}
+
+.pageparticlecontainer.withdividingline {
+
+	.pageparticle {
+		border-bottom: 1px solid $primary;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.pageparticle:first-of-type {
+		border-bottom: 1px solid $primary;
+		padding-top: 0;
+		padding-bottom: 40px;
+	}
+
+	.pageparticle:last-of-type {
+		border-bottom: 0 solid $primary;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+}
+
 .pageparticle {
 	p {
 		padding-bottom: 12px;
@@ -266,9 +290,7 @@ xxxxxxxxxxxxxxx {}
 }
 
 .pageparticle {
-	p:last-of-type {
-		padding-bottom: 0;
-	}
+	p:last-of-type {}
 }
 
 // Buttons

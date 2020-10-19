@@ -74,24 +74,27 @@ if ($navbarBurgers.length > 0) {
                     </div><!-- .site-branding -->
                 
 
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <img src="http://paneltopagetheme.com/wp-content/uploads/2020/10/nav-icon.png" alt="" width="39" height="30" class="alignright size-full wp-image-209" />
-                </a>
+                    <button class="button navbar-burger" data-target="primary-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             </div>
 
     <div id="navbarBasicExample" class="navbar-menu">
-            
+          
 
-        <?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-                    'menu_id'        => 'primary-menu',
-                    'container'      => 'false',
-                    'container_class'      => '',
-                    'menu_class'           => 'navbar-end',
-				)
-			);
+<?php
+    wp_nav_menu( array(
+      'theme_location'    => 'primary',
+      'depth'             => 2,
+      'container'         => false,
+      // 'items_wrap'        => 'div',
+      'menu_class'        => 'navbar-menu',
+      'menu_id'           => 'primary-menu',
+      'after'             => "</div>",
+      'walker'            => new Navwalker())
+  );
         ?>
 
     </div>

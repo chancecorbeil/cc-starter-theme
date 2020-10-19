@@ -11741,35 +11741,44 @@ section.headersection {
   margin-bottom: 0;
 }
 
-.maincontentarea p,
-.pageparticlecontainer p {
+.maincontentarea p {
   padding-bottom: 12px;
 }
-.maincontentarea .pageparticle,
+
 .pageparticlecontainer .pageparticle {
-  border-bottom: 1px solid #F36F57;
-  padding-top: 38px;
-  padding-bottom: 60px;
+  border-bottom: 0 solid #00a388;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.maincontentarea .pageparticle:first-of-type,
 .pageparticlecontainer .pageparticle:first-of-type {
-  border-bottom: 1px solid #F36F57;
+  border-bottom: 0 solid #00a388;
   padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
-.maincontentarea .pageparticle:last-of-type,
 .pageparticlecontainer .pageparticle:last-of-type {
-  border-bottom: 0 solid #F36F57;
-  padding-top: 38px;
-  padding-bottom: 60px;
+  border-bottom: 0 solid #00a388;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.pageparticlecontainer.withdividingline .pageparticle {
+  border-bottom: 1px solid #00a388;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.pageparticlecontainer.withdividingline .pageparticle:first-of-type {
+  border-bottom: 1px solid #00a388;
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+.pageparticlecontainer.withdividingline .pageparticle:last-of-type {
+  border-bottom: 0 solid #00a388;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .pageparticle p {
   padding-bottom: 12px;
-}
-
-.pageparticle p:last-of-type {
-  padding-bottom: 0;
 }
 
 .button {

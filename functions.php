@@ -199,3 +199,12 @@ if( function_exists('acf_add_options_page') ) {
 	));
 	
 }
+
+
+// Add Navwalker menu for Bulma integration
+// https://github.com/Poruno/Bulma-Navwalker
+
+require_once('navwalker.php');
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'menuname' ),
+) );

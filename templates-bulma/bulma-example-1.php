@@ -1,10 +1,12 @@
-<section class="section">
+<section class="section" id="bulmaexample1">
   <div class="container">
     <div class="columns">
       <div class="column is-12">
         <h2 class="title is-2 has-text-centered">Bulma Example 1</h2>
       </div>
     </div>
+
+
     <div class="columns">
 
       <div class="column is-3">

@@ -1,4 +1,4 @@
-  <section class="section">
+  <section class="section" id="bulmaexample2">
     <div class="container">
       <div class="columns">
         <div class="column is-12">

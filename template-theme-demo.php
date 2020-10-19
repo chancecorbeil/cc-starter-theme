@@ -123,6 +123,17 @@ get_header();
         <div class="column is-12 has-text-centered">
           <h2 class="title is-2">Bulma Parts</h2>
           <p class="subtitle">Use these Bulma components in your projects</p>
+
+          <div class="tabs is-centered">
+          <ul>
+            <li><a href="#bulmaexample1">Bulma Example 1</a></li>
+            <li><a href="#bulmaexample2">Bulma Example 2</a></li>
+            <li><a href="#bulmaexample3">Bulma Example 3</a></li>
+            <li><a href="#bulmaexample4">Bulma Example 4</a></li>
+            <li><a href="#bulmaexample5">Bulma Example 5</a></li>
+          </ul>
+        </div>
+        
         </div>
       </div>
     </div>
