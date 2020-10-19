@@ -87,6 +87,9 @@ $desktop: 1138px+(2 * $gap);
 $widescreen: 1138px+(2 * $gap);
 $fullhd: 1138px+(2 * $gap);
 
+// 6. Import the rest of Bulma
+@import "../sass/bulma/bulma";
+
 // General
 
 html,
@@ -252,7 +255,7 @@ xxxxxxxxxxxxxxx {}
 		padding-top: 38px;
 		padding-bottom: 60px;
 	}
-	
+
 }
 
 // Page Particle
@@ -394,14 +397,26 @@ nav li.button {
 }
 
 
+
+
+
 // Screen Size Break Points
 
-@media screen and (max-width: 768px) {}
-@media screen and (max-width: 1201px) {}
+// mobile until 768px
+// tablet from 769px
+// tablet-only from 769px and until 1023px
+// touch until 1023px
+// desktop from 1024px
+// desktop-only from 1024px and until 1215px
+// widescreen from 1216px
+// widescreen-only from 1216px and until 1407px
+// fullhd from 1408px
+
+// Example break point use
+@include until($desktop) {}
+@include from($desktop) {}
 
 
-// 6. Import the rest of Bulma
-@import "../sass/bulma/bulma";
 
 
 // CC Site Only
