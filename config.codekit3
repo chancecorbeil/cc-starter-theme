@@ -1705,6 +1705,14 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/template-advanced-custom-fields.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-advanced-custom-fields.php",
+		"oF": 0
+		},
 	"/template-fullwidthpage.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1761,44 +1769,60 @@
 		"oAP": "/templates-bulma/bulma-code-templates.php",
 		"oF": 0
 		},
-	"/templates-bulma/bulma-example-1.php": {
+	"/templates-bulma/bulma-template-1.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates-bulma/bulma-example-1.php",
+		"oAP": "/templates-bulma/bulma-template-1.php",
 		"oF": 0
 		},
-	"/templates-bulma/bulma-example-2.php": {
+	"/templates-bulma/bulma-template-2.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates-bulma/bulma-example-2.php",
+		"oAP": "/templates-bulma/bulma-template-2.php",
 		"oF": 0
 		},
-	"/templates-bulma/bulma-example-3.php": {
+	"/templates-bulma/bulma-template-3.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates-bulma/bulma-example-3.php",
+		"oAP": "/templates-bulma/bulma-template-3.php",
 		"oF": 0
 		},
-	"/templates-bulma/bulma-example-4.php": {
+	"/templates-bulma/bulma-template-4.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates-bulma/bulma-example-4.php",
+		"oAP": "/templates-bulma/bulma-template-4.php",
 		"oF": 0
 		},
-	"/templates-bulma/bulma-example-5.php": {
+	"/templates-bulma/bulma-template-5.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates-bulma/bulma-example-5.php",
+		"oAP": "/templates-bulma/bulma-template-5.php",
+		"oF": 0
+		},
+	"/templates-bulma/bulma-template-6.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates-bulma/bulma-template-6.php",
+		"oF": 0
+		},
+	"/templates-bulma/bulma-template-7.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates-bulma/bulma-template-7.php",
 		"oF": 0
 		}
 	},

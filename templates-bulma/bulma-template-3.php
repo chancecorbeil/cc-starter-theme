@@ -1,8 +1,8 @@
-  <section class="section" id="bulmaexample3">
+  <section class="section" id="bulmatemplate3">
     <div class="container">
       <div class="columns">
         <div class="column is-12">
-        <h2 class="title is-2">Bulma Example 3</h2>
+        <h2 class="title is-2">Bulma Template 3</h2>
           <p class="subtitle">Subtitle</p>
         </div>
       </div>

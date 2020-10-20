@@ -90,7 +90,7 @@ if ($navbarBurgers.length > 0) {
       'depth'             => 2,
       'container'         => false,
       // 'items_wrap'        => 'div',
-      'menu_class'        => 'navbar-menu',
+      'menu_class'        => 'navbar-menu, navbar-end',
       'menu_id'           => 'primary-menu',
       'after'             => "</div>",
       'walker'            => new Navwalker())

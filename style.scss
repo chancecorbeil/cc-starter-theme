@@ -147,13 +147,11 @@ nav .is-lightblue.navbar-item a {
 }
 
 // Titles
-h1 {
+.is-h1,
+.is-h1.title  {
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-}
-
-h1.title {
 	color: #ffffff;
 	font-size: 60px;
 	letter-spacing: 2px;

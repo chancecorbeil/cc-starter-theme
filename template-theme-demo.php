@@ -1,11 +1,7 @@
 <?php
 /**
  * Template Name: Theme Demo
- * 
  * The template for displaying the theme demo.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
  * @package CC_Starter_Theme
  */
 
@@ -121,35 +117,45 @@ get_header();
     <div class="container">
       <div class="columns">
         <div class="column is-12 has-text-centered">
-          <h2 class="title is-2">Bulma Parts</h2>
+          <h2 class="title is-2">Bulma Bolts</h2>
           <p class="subtitle">Use these Bulma components in your projects</p>
 
           <div class="tabs is-centered">
           <ul>
-            <li><a href="#bulmaexample1">Bulma Example 1</a></li>
-            <li><a href="#bulmaexample2">Bulma Example 2</a></li>
-            <li><a href="#bulmaexample3">Bulma Example 3</a></li>
-            <li><a href="#bulmaexample4">Bulma Example 4</a></li>
-            <li><a href="#bulmaexample5">Bulma Example 5</a></li>
+            <li><a href="#bulmatemplate1">Bulma Template 1</a></li>
+            <li><a href="#bulmatemplate2">Bulma Template 2</a></li>
+            <li><a href="#bulmatemplate3">Bulma Template 3</a></li>
+            <li><a href="#bulmatemplate4">Bulma Template 4</a></li>
+            <li><a href="#bulmatemplate5">Bulma Template 5</a></li>
           </ul>
         </div>
-        
+
+        <div class="tabs is-centered">
+          <ul>
+            <li><a href="#bulmatemplate6">Bulma Template 6</a></li>
+            <li><a href="#bulmatemplate7">Bulma Template 7</a></li>
+            <li><a href="#bulmatemplate8">Bulma Template 8</a></li>
+            <li><a href="#bulmatemplate9">Bulma Template 9</a></li>
+            <li><a href="#bulmatemplate10">Bulma Template 10</a></li>
+          </ul>
+        </div>
+
         </div>
       </div>
     </div>
   </section>
   <!-- End: Page IntroPage Intro -->
 
-  <!-- Add Bulma Example 1  --> <?php get_template_part( 'templates-bulma/bulma-example-1'); ?>
-  <!-- Add Bulma Example 2  --> <?php get_template_part( 'templates-bulma/bulma-example-2'); ?>
-  <!-- Add Bulma Example 3  --> <?php get_template_part( 'templates-bulma/bulma-example-3'); ?>
-  <!-- Add Bulma Example 4  --> <?php get_template_part( 'templates-bulma/bulma-example-4'); ?>
-  <!-- Add Bulma Example 5  --> <?php get_template_part( 'templates-bulma/bulma-example-5'); ?>
-  <!-- Add Bulma Example 6  --> <?php get_template_part( 'templates-bulma/bulma-example-6'); ?>
-  <!-- Add Bulma Example 7  --> <?php get_template_part( 'templates-bulma/bulma-example-7'); ?>
-  <!-- Add Bulma Example 8  --> <?php get_template_part( 'templates-bulma/bulma-example-8'); ?>
-  <!-- Add Bulma Example 9  --> <?php get_template_part( 'templates-bulma/bulma-example-9'); ?>
-  <!-- Add Bulma Example 10  --> <?php get_template_part( 'templates-bulma/bulma-example-10'); ?>
+  <!-- Add Bulma Template 1  --> <?php get_template_part( 'templates-bulma/bulma-template-1'); ?>
+  <!-- Add Bulma Template 2  --> <?php get_template_part( 'templates-bulma/bulma-template-2'); ?>
+  <!-- Add Bulma Template 3  --> <?php get_template_part( 'templates-bulma/bulma-template-3'); ?>
+  <!-- Add Bulma Template 4  --> <?php get_template_part( 'templates-bulma/bulma-template-4'); ?>
+  <!-- Add Bulma Template 5  --> <?php get_template_part( 'templates-bulma/bulma-template-5'); ?>
+  <!-- Add Bulma Template 6  --> <?php get_template_part( 'templates-bulma/bulma-template-6'); ?>
+  <!-- Add Bulma Template 7  --> <?php get_template_part( 'templates-bulma/bulma-template-7'); ?>
+  <!-- Add Bulma Template 8  --> <?php get_template_part( 'templates-bulma/bulma-template-8'); ?>
+  <!-- Add Bulma Template 9  --> <?php get_template_part( 'templates-bulma/bulma-template-9'); ?>
+  <!-- Add Bulma Template 10  --> <?php get_template_part( 'templates-bulma/bulma-template-10'); ?>
 
 
 
