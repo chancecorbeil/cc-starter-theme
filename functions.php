@@ -25,9 +25,9 @@ if ( ! function_exists( 'CC_Starter_Theme_setup' ) ) :
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on CC Starter Theme, use a find and replace
-		 * to change 'ccstartertheme' to the name of your theme in all the template files.
+		 * to change 'cc-starter-theme' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'ccstartertheme', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'cc-starter-theme', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -50,7 +50,7 @@ if ( ! function_exists( 'CC_Starter_Theme_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'ccstartertheme' ),
+				'menu-1' => esc_html__( 'Primary', 'cc-starter-theme' ),
 			)
 		);
 
@@ -124,9 +124,9 @@ add_action( 'after_setup_theme', 'CC_Starter_Theme_content_width', 0 );
 function CC_Starter_Theme_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'ccstartertheme' ),
+			'name'          => esc_html__( 'Sidebar', 'cc-starter-theme' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'ccstartertheme' ),
+			'description'   => esc_html__( 'Add widgets here.', 'cc-starter-theme' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -140,10 +140,10 @@ add_action( 'widgets_init', 'CC_Starter_Theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function CC_Starter_Theme_scripts() {
-	wp_enqueue_style( 'ccstartertheme-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'ccstartertheme-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'cc-starter-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_style_add_data( 'cc-starter-theme-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'ccstartertheme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'cc-starter-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

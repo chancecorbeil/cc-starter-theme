@@ -1,10 +1,10 @@
 <!-- Begin: Section #4 -->
-<section class="section" id="bulmatemplate7">
+<section class="section" id="bulmatemplate5">
   <div class="container">
 
     <div class="columns">
       <div class="column is-12">
-        <h2 class="title is-2">Bulma Template 7</h2>
+        <h2 class="title is-2">Bulma Template 5</h2>
       </div>
     </div>
 

@@ -19,13 +19,13 @@
 
 	<?php wp_head(); ?>
 	<!-- Google Fonts --><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-	<!-- <link rel="stylesheet" id="ccstartertheme-style-css" href="<?php echo get_site_url(); ?>/wp-content/themes/ccstartertheme/sass/bulma/bulma.css" media="all">-->
+	<!-- <link rel="stylesheet" id="cc-starter-theme-style-css" href="<?php echo get_site_url(); ?>/wp-content/themes/cc-starter-theme/sass/bulma/bulma.css" media="all">-->
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'ccstartertheme' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cc-starter-theme' ); ?></a>
 
 	<header id="masthead" class="site-header">
 

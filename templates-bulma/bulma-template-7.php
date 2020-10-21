@@ -1,5 +1,5 @@
 <!-- Begin: blog loop for posts -->
-<section class="section pageparticlecontainer" id="bulmatemplate4">
+<section class="section pageparticlecontainer" id="bulmatemplate7">
 
   <div class="container pageparticle">
     <div class="columns">
@@ -11,7 +11,7 @@
   </div>
 
   <div class="container pageparticle">
-    <div class="columns">
+    <div class="columns card has-text-centered">
 
       <?php wp_reset_query(); ?>
 
@@ -27,9 +27,9 @@
 
       <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 
-      <div class="card column is-4">
+      <div class=" column is-4">
         <div class="card-image">
-          <figure class="image is-4by3">
+          <figure class="image">
             <?php echo get_the_post_thumbnail(); ?>
           </figure>
         </div>
@@ -37,6 +37,12 @@
 
           <div class="content">
             <h2 class="title is-4"><a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a></h2>
+            
+                                <!-- Subtitle -->
+                                <?php if( get_field('subtitle') ): ?>
+                                  <p class="subtitle"><?php the_field('subtitle'); ?></p>
+                    <?php endif; ?>
+
           </div>
         </div>
       </div>

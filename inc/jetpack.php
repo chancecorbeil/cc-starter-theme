@@ -33,7 +33,7 @@ function CC_Starter_Theme_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'ccstartertheme-style',
+				'stylesheet' => 'cc-starter-theme-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',

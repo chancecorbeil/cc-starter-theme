@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-  <!-- Begin: blog loop for custom post type -->
+<!-- Begin: blog loop for custom post type -->
   <section class="section pageparticlecontainer"  id="bulmatemplate4">
     <div class="container pageparticle">
       <div class="columns">

@@ -41,11 +41,7 @@ get_header();
 
                     <!-- Subtitle -->
                     <?php if( get_field('subtitle') ): ?>
-
-                    <p>
-                        <?php the_field('subtitle'); ?>
-                    </p>
-
+                        <p class="subtitle"><?php the_field('subtitle'); ?></p>
                     <?php endif; ?>
 
 
