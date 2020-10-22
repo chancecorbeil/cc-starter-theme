@@ -1824,6 +1824,14 @@
 		"oA": 0,
 		"oAP": "/templates-bulma/bulma-template-7.php",
 		"oF": 0
+		},
+	"/templates-bulma/bulma-template-8.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates-bulma/bulma-template-8.php",
+		"oF": 0
 		}
 	},
 "hooks": [

@@ -56,11 +56,15 @@ $teal: #00a388;
 $brown: #5a372b;
 
 // Set the derived variables
-// Use the new pink as the primary color
 $primary: $darkblue;
 $primary-invert: $white;
 
 // Setup your Custom Colors
+$secondary: $teal;
+$secondary-invert: $white;
+$accent: $salmon;
+$accent-invert: $white;
+
 $linkedin: #0077b5;
 $linkedin-invert: findColorInvert($linkedin);
 $twitter: #55acee;
@@ -70,7 +74,10 @@ $github-invert: findColorInvert($github);
 
 // Add new color variables to the color map.
 @import "../sass/bulma/sass/utilities/derived-variables";
-$addColors: ("twitter":($twitter, $twitter-invert),
+$addColors: ("secondary":($secondary, $secondary-invert),
+"accent":($accent, $accent-invert),
+
+"twitter":($twitter, $twitter-invert),
 	"linkedin": ($linkedin, $linkedin-invert),
 	"github": ($github, $github-invert));
 $colors: map-merge($colors, $addColors);
