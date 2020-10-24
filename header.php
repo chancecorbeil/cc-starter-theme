@@ -18,7 +18,11 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
-	<!-- Google Fonts --><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Google Fonts --><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 	<!-- <link rel="stylesheet" id="cc-starter-theme-style-css" href="<?php echo get_site_url(); ?>/wp-content/themes/cc-starter-theme/sass/bulma/bulma.css" media="all">-->
 </head>
 
@@ -61,9 +65,16 @@ if ($navbarBurgers.length > 0) {
 });
 </script>
 
+    
+    
 
 
-<!-- Begin: Header Section -->
+<!-- Header Template 1-->
+
+    <?php 
+if( get_field('select_header_template', 'option') == 'headertemplate1' ) {
+?>
+
 <section class="section headersection">
     <div class="container">
         <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -102,8 +113,54 @@ if ($navbarBurgers.length > 0) {
     </div>
     
 </section>
-		<!-- End: Header Section -->
-		
+    
+    <?php
+}?>
+<!-- Header Template 1-->
+
+
+<!-- Header Template 2 -->
+<?php if( get_field('select_header_template', 'option') == 'headertemplate2' ) {
+?>
+<!-- Announcement Bar -->
+<?php if( get_field('announcement_bar', 'option') ): ?>
+
+<div class="has-background-grey-dark has-text-white has-text-centered is-size-7 announcement">
+    <?php the_field('announcement_bar', 'option'); ?>
+</div>
+
+<?php endif; ?>
+
+
+<section class="section shortsection has-background-white-ter" id="bulmatemplate10">
+    <div class="container wide-container">
+
+        <div class="columns is-vcentered">
+            <div class="column is-6">
+                <a class="title is-3 has-text-primary">Chance Corbeil</a>
+                <img src="<?php echo get_template_directory_uri() ?>/images/star.svg" alt="" width="18" height="18"
+                    class="starlogo" />
+
+            </div>
+
+            <div class="column is-6 has-text-right">
+                <a class="button has-background-primary "
+                    href="mailto:hello@chancecorbeil.com?subject=Hi Chance!">Contact</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Header -->
+<?php
+}?>
+<!-- Header Template  2-->
+
+
+
+
+
+
 
 
 

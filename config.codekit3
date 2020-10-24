@@ -49,6 +49,14 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
+	"/archive-dev-journal.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/archive-dev-journal.php",
+		"oF": 0
+		},
 	"/archive-examples.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -112,6 +120,86 @@
 		"oA": 0,
 		"oAP": "/header.php",
 		"oF": 0
+		},
+	"/images/avataaars1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/avataaars1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/images/avataaars2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/avataaars2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/images/avataaars3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/avataaars3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/images/avataaars4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/avataaars4.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/images/avatar1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/avatar1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/images/avatar2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/avatar2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/images/avatar4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/avatar4.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/images/star.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/star.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/inc/custom-header.php": {
 		"cB": 0,
@@ -1656,6 +1744,14 @@
 		"oAP": "/sidebar.php",
 		"oF": 0
 		},
+	"/single-dev-journal.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/single-dev-journal.php",
+		"oF": 0
+		},
 	"/single-examples.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1682,16 +1778,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/style.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1711,6 +1797,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/template-advanced-custom-fields.php",
+		"oF": 0
+		},
+	"/template-cc-home.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/template-cc-home.php",
 		"oF": 0
 		},
 	"/template-fullwidthpage.php": {
@@ -1777,6 +1871,22 @@
 		"oAP": "/templates-bulma/bulma-template-1.php",
 		"oF": 0
 		},
+	"/templates-bulma/bulma-template-10.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates-bulma/bulma-template-10.php",
+		"oF": 0
+		},
+	"/templates-bulma/bulma-template-11.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates-bulma/bulma-template-11.php",
+		"oF": 0
+		},
 	"/templates-bulma/bulma-template-2.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1831,6 +1941,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates-bulma/bulma-template-8.php",
+		"oF": 0
+		},
+	"/templates-bulma/bulma-template-9.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates-bulma/bulma-template-9.php",
 		"oF": 0
 		}
 	},

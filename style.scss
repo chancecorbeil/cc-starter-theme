@@ -54,13 +54,33 @@ $lightblue: #34AFC8;
 $salmon: #F36F57;
 $teal: #00a388;
 $brown: #5a372b;
+$lightyellow: #fadcaa;
+$lightorange: #ffc09f;
+$lightorange-invert: #777777;
+$orange: #ff8c61;
+
+$purple1: #8c5b97;
+$purple2: #6d597a;
+$purple3: #ada7c9;
+$purple4: #6d597a;
+$purple5: #8e7dbe;
+$purple6: #794c74;
+$pink1: #c56183;
+$pink2: #b56576;
+$pink3: #f4cae0;
+
+$colorset1a: #355070;
+$colorset1b: #6d597a;
+$colorset1c: #b56576;
+$colorset1d: #e56b6f;
+$colorset1e: #eaac8b;
 
 // Set the derived variables
-$primary: $darkblue;
+$primary: $purple1;
 $primary-invert: $white;
 
 // Setup your Custom Colors
-$secondary: $teal;
+$secondary: $pink1;
 $secondary-invert: $white;
 $accent: $salmon;
 $accent-invert: $white;
@@ -75,19 +95,61 @@ $github-invert: findColorInvert($github);
 // Add new color variables to the color map.
 @import "../sass/bulma/sass/utilities/derived-variables";
 $addColors: ("secondary":($secondary, $secondary-invert),
+"lightorange":($lightorange, $lightorange-invert),
 "accent":($accent, $accent-invert),
-
 "twitter":($twitter, $twitter-invert),
 	"linkedin": ($linkedin, $linkedin-invert),
 	"github": ($github, $github-invert));
 $colors: map-merge($colors, $addColors);
 
+
+// Google Fonts
+
+// Karla
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+// Quattrocento
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+// Cormorant Garamond
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+// Cardo
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+// Spectral
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,700;0,800;1,400;1,500&display=swap');
+// Halant
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@400;600;700&display=swap');
+// Libre Baskerville
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
 // Sass Variables
+
+$family-1: 'Lora', serif;
+$family-2: 'Roboto', sans-serif;
+$family-3: 'Playfair Display', serif;
+$family-4: 'Source Sans Pro', sans-serif;
+$family-5: 'Montserrat', sans-serif;
+$family-6: 'Karla', sans-serif;
+$family-7: 'Quattrocento', serif;
+$family-8: 'Cormorant Garamond', serif;
+$family-9: 'Cardo', serif;
+$family-10: 'Spectral', serif;
+$family-11: 'Halant', serif;
+$family-12: 'Libre Baskerville', serif;
+$family-13: 'xxxxxxxxx', serif;
+
+$family-primary: $family-11;
+$family-secondary: $family-6;
+
 $family-serif: 'Montserrat',
 sans-serif;
-$family-primary: $family-serif;
-$text: $black;
-$body-size: 18px;
+
+
+
+$background: $white-ter;
+
+$text: #4a4a4a;
+$link: $primary;
+$body-size: 20px;
 $body-line-height: 1.666;
 $section-padding: 65px 35px;
 $desktop: 1138px+(2 * $gap);
@@ -101,7 +163,12 @@ $fullhd: 1138px+(2 * $gap);
 
 html,
 body {
-	overflow-x: hidden;
+//	overflow-x: hidden;
+}
+
+body{
+	font-family: $family-secondary;
+	background-color: $background;
 }
 
 .post,
@@ -110,7 +177,7 @@ body {
 }
 
 a:visited {
-	color: $black;
+	color: $primary;
 }
 
 .posted-on a,
@@ -140,20 +207,20 @@ a:visited {
 .single .subtitle,
 .single .subtitle:not(:last-child) {
 	margin-bottom: 0;
+	font-size: $body-size;
 }
 
-$primary: $teal;
-
-button.is-salmon {
-	background-color: $salmon;
-	color: #ffffff;
-}
-
-nav .is-lightblue.navbar-item a {
-	color: $lightblue;
+p {
+	font-family: $family-secondary;
 }
 
 // Titles
+
+.title {
+	font-family: $family-primary;
+	color: $primary;
+}
+
 .is-h1,
 .is-h1.title  {
 	font-weight: bold;
@@ -168,41 +235,20 @@ nav .is-lightblue.navbar-item a {
 h2,
 h2.title,
 .entry-content h2 {
-	color: $teal;
 	font-weight: $weight-semibold;
 	font-size: 36px;
-
-	a {
-		color: $teal;
-	}
 }
 
 h3,
 h3.title,
 h3.hrf-title,
 .entry-content h3 {
-	color: $teal;
 	font-weight: $weight-bold;
 	font-size: 38px;
 }
 
 h3.hrf-title {
 	line-height: 1.125;
-}
-
-h3.title.is-lightblue,
-h3.title.is-lightblue a {
-	color: $lightblue;
-}
-
-h3.title.is-teal,
-h3.title.is-teal a {
-	color: $teal;
-}
-
-h3.title.is-salmon,
-h3.title.is-salmon a {
-	color: $salmon;
 }
 
 // Header
@@ -239,7 +285,7 @@ xxxxxxxxxxxxxxx {}
 .maincontentarea
 
 p {
-	padding-bottom: 12px;
+	padding-bottom: 1.5rem;
 }
 
 // Page Particle
@@ -305,7 +351,6 @@ p {
 	border: none !important;
 	color: $white;
 	font-weight: $weight-bold;
-	text-transform: uppercase;
 	font-size: 15px;
 	letter-spacing: 1px;
 }
@@ -313,21 +358,6 @@ p {
 section .button:hover,
 .button.is-hovered {
 	color: $white;
-}
-
-.button.is-lightblue {
-	color: $white;
-	background-color: $lightblue;
-}
-
-.button.is-teal {
-	color: $white;
-	background-color: $teal;
-}
-
-.button.is-salmon {
-	color: $white;
-	background-color: $salmon;
 }
 
 
@@ -404,7 +434,7 @@ nav li.button {
 // Hero Template
 
 .hero nav.tabs.is-boxed {
-	background-color: $teal;
+	background-color: $primary;
 
 	ul {
 		align-items: center;
@@ -442,6 +472,123 @@ nav li.button {
 // Example break point use
 @include until($desktop) {}
 @include from($desktop) {}
+
+
+
+// Website Browser Graphic Container
+
+.browser {
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+  }
+  .browser .title-bar {
+	float: left;
+	height: auto;
+	width: 100%;
+	background: #D3D3D3;
+	height: auto;
+	border-radius: 5px 5px 0 0;
+  }
+  .browser .btns {
+	position: relative;
+	float: left;
+	white-space: nowrap;
+	padding: .6em;
+	margin-left: 4px;
+  }
+  .browser .btns .close, .browser .btns .min, .browser .btns .max {
+	float: left;
+	border-radius: 50%;
+	margin-right: 8px;
+	opacity: 100;
+	height: 10px;
+	width: 10px;
+  }
+  .browser .btns .close {
+	background-color: #E96E4C;
+  }
+  .browser .btns .min {
+	background-color: #E6A935;
+  }
+  .browser .btns .max {
+	background-color: #85C33D;
+  }
+  .browser .location-bar {
+	background-color: #c3c3c3;
+	position: relative;
+	float: left;
+	height: .9em;
+	width: 82%;
+	margin-top: .45em;
+  }
+  .browser.small {
+	  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  }
+  .browser.small .title-bar {
+	border-radius: 3px 3px 0 0;
+  }
+  .browser.small .btns {
+	padding: .25em;
+	margin-left: 4px;
+  }
+  .browser.small .btns .close, .browser.small .btns .min, .browser.small .btns .max {
+	margin-right: 5px;
+	height: 5px;
+	width: 5px;
+  }
+  .browser.small .location-bar {
+	height: .4em;
+	width: 82%;
+	margin-top: .23em;
+  }
+  .browser.tiny {
+  }
+  .browser.tiny .title-bar {
+	border-radius: 3px 3px 0 0;
+  }
+  .browser.tiny .btns {
+	padding: .25em;
+	margin-left: 4px;
+  }
+  .browser.tiny .btns .close, .browser.tiny .btns .min, .browser.tiny .btns .max {
+	margin-right: 4px;
+	height: 4px;
+	width: 4px;
+  }
+  .browser.tiny .location-bar {
+	height: .35em;
+	width: 82%;
+	margin-top: .24em;
+  }
+  .browser.mobile {
+	width: 320px;
+  }
+  .browser.mobile .title-bar {
+	height: 30px;
+  }
+  .browser.mobile .location-bar {
+	width: 84%;
+	margin-left: 5%;
+	margin-right: 4%;
+  }
+  .browser.mobile .control {
+	float: left;
+	line-height: 1.7em;
+	height: 100%;
+	color: #A3A3A5;
+  }
+  .browser img {
+  border-color: #d3d3d3;
+	   border-image: none;
+	   border-style: none solid solid;
+	   border-width: 0 5px 5px;
+  }
+  
+
+
 
 
 
@@ -512,7 +659,7 @@ background-color: $brown;
 
 .resume {
 
-	background-color: $salmon;
+	background-color: $primary;
 	padding-top: 1rem;
 
 	.container {
@@ -526,18 +673,18 @@ background-color: $brown;
 
 	.seeclients {
 		font-weight: 500;
-		background-color: $teal;
-		color: $white;
+		background-color: $secondary;
+		color: $secondary-invert;
 	}
 
 	a {
-		color: $salmon;
+		color: $accent;
 	}
 }
 
 .resumebutton {
-	background-color: $teal;
-		color: $white;
+	background-color: $secondary;
+		color: $secondary-invert;
 }
 
 .displaynone {
@@ -550,4 +697,52 @@ background-color: $brown;
 
  .box .card-content {
     padding: 1.5rem 1.5rem 0;
+}
+
+.container.wide-container {
+    max-width: 1538px;
+}
+
+section.section.shortsection {
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+xxxx.herowithhomebg {
+	background-image: url("http://localhost:10013/wp-content/uploads/2020/10/bg-scaled.jpg");
+	background-position: right bottom;
+	background-repeat: no-repeat; 
+}
+
+.testimonial {
+
+	.quotemarks {}
+
+	.testimonialquote {
+		font-weight: 600;
+		line-height: 1.3em;
+    padding-bottom: 12px;
+	}
+
+}
+
+.announcement {
+	padding: 10px 35px;
+}
+
+.starinfooter {
+	top: 2px;
+	position: relative;
+}
+
+.socialinfooter {
+	opacity: 0.3;
 }

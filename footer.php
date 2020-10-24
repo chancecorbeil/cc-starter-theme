@@ -18,23 +18,24 @@
 
 
 <!-- Begin: Footer Template 2 -->
-<section class="section has-background-info has-text-grey-lighter">
-        <div class="container">
+<section class="section pt-0 pb-0 has-background-grey-darker has-text-grey-lighter footer">
+        <div class="container wide-container is-size-7">
 
             <div class="columns is-vcentered">
                 <div class="column is-4 has-text-left">
                 <?php if( get_field('footer_field_2', 'option') ): ?>
-                    <p class="subtitle"><?php the_field('footer_field_2', 'option'); ?></p>
+                    <?php the_field('footer_field_2', 'option'); ?>
                     <?php endif; ?>
                 </div>
                 <div class="column is-4 has-text-centered">
+                    
                 <?php if( get_field('footer_field_1', 'option') ): ?>
-                    <p class="subtitle"><?php the_field('footer_field_1', 'option'); ?></p>
+                    <?php the_field('footer_field_1', 'option'); ?>
                     <?php endif; ?>
                 </div>
                 <div class="column is-4 has-text-right">
                 <?php if( get_field('footer_field_3', 'option') ): ?>
-                    <p class="subtitle"><?php the_field('footer_field_3', 'option'); ?></p>
+                    <?php the_field('footer_field_3', 'option'); ?>
                     <?php endif; ?>
                 </div>
             </div>
