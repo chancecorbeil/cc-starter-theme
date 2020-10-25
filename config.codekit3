@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "CFF750CA-337C-4317-9EB5-DF419B282153"
+		"uuidString": "47718079-3458-4EB4-A0DF-D2EFF5902D90"
 		}
 	],
 "creatorBuild": "32186",
@@ -1717,6 +1717,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/sass/variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/sass/variables.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/screenshot.jpg": {
 		"ft": 16384,
 		"iS": 86235,
@@ -1957,11 +1970,11 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 621497517.07642198,
+	"creationDate": 625281341.11940098,
 	"displayValue": "cc-starter-theme",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-ariel",
-	"iconImageWasSetByUser": 1
+	"iconImageName": "brackets-glace",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
