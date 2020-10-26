@@ -21,15 +21,14 @@ get_header();
   <section class="hero is-primary is-medium">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">
-          <?php echo get_the_title(); ?>
-        </h1>
+        <h1 class="title">CC Starter Theme</h1>
+        <div class="subtitle">Below are instructions on using the theme.</div>
       </div>
     </div>
   </section>
   <!-- Begin: Bulma Hero -->
 
-  <!-- Begin: Main Content Area Section -->
+  <!-- Begin: documentation -->
   <section class="section">
     <div class="container">
 
@@ -37,9 +36,31 @@ get_header();
 
         <div class="column is-12 maincontentarea">
 
-          <p>front-page.php used here</p>
+          <p>This is the front-page.php template.</p>
 
-          <?php the_content(); ?>
+          <div class="title is-2">Documentation</div>
+
+          <p>This theme can be a parent theme or a child theme.</p>
+
+          <div class="title is-3">CSS and SASS</div>
+
+          <p>This theme uses SASS. The style.scss file must be compiled into style.css. Both files are in the root direcory of the theme.</p>
+          <p>The color and font variables are in _variables.scss located in the /sass directory.</p>
+
+          <div class="title is-3">Includes</div>
+
+          <ul>
+          <li>Bulma</li>
+          <li>XXXXXX</li>
+</ul>
+
+
+          <div class="title is-2">Coming soon to the documentation</div>
+
+          <ul>
+          <li>Download links for ACF import files and similar downloadable files.</li>
+          <li>Includes list</li>
+</ul>
 
         </div>
 
@@ -47,7 +68,9 @@ get_header();
 
     </div>
   </section>
-  <!-- End: Main Content Area Section -->
+  <!-- End: documentation -->
+  
+  
 
 </main><!-- #main -->
 

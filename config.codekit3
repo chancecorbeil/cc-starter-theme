@@ -9,6 +9,19 @@
 	],
 "creatorBuild": "32186",
 "files": {
+	"-child/sass/variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "-child/sass/variables.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/.eslintrc": {
 		"cB": 0,
 		"ft": 8192,
@@ -1791,6 +1804,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/style.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1800,7 +1823,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/style.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"sct": 0
 		},
@@ -1972,7 +1995,7 @@
 "projectAttributes": {
 	"creationDate": 625281341.11940098,
 	"displayValue": "cc-starter-theme",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets-glace",
 	"iconImageWasSetByUser": 0
 	},

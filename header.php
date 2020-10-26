@@ -125,7 +125,7 @@ if( get_field('select_header_template', 'option') == 'headertemplate1' ) {
 <!-- Announcement Bar -->
 <?php if( get_field('announcement_bar', 'option') ): ?>
 
-<div class="has-background-grey-dark has-text-white has-text-centered is-size-7 announcement">
+<div class="has-background-secondary has-text-white has-text-centered is-size-7 announcement">
     <?php the_field('announcement_bar', 'option'); ?>
 </div>
 
@@ -136,15 +136,16 @@ if( get_field('select_header_template', 'option') == 'headertemplate1' ) {
     <div class="container wide-container">
 
         <div class="columns is-vcentered">
-            <div class="column is-6">
-                <a class="title is-3 has-text-primary">Chance Corbeil</a>
+            <div class="column is-6 logocontainer">
+                <a class="title is-3 has-text-primary" href="<?php echo get_site_url() ?>">Chance Corbeil</a>
                 <img src="<?php echo get_template_directory_uri() ?>/images/star.svg" alt="" width="18" height="18"
                     class="starlogo" />
 
             </div>
 
-            <div class="column is-6 has-text-right">
-                <a class="button has-background-primary "
+            <div class="column is-6 headermenucontainer">
+            <a class="button has-background-secondary" href="<?php echo get_site_url() ?>/resume">Resume</a>
+                    <a class="button has-background-primary "
                     href="mailto:hello@chancecorbeil.com?subject=Hi Chance!">Contact</a>
             </div>
 
@@ -165,3 +166,4 @@ if( get_field('select_header_template', 'option') == 'headertemplate1' ) {
 
 
 	</header><!-- #masthead -->
+    

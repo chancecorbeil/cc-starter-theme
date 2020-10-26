@@ -14,6 +14,8 @@ $lightorange-invert: #777777;
 $orange: #ff8c61;
 
 $purple1: #8c5b97;
+$purple1lightest: #D3BBD8;
+$purple1ldarkest: #200C24;
 $purple2: #6d597a;
 $purple3: #ada7c9;
 $purple4: #6d597a;
@@ -51,6 +53,8 @@ $github-invert: findColorInvert($github);
 $addColors: ("secondary":($secondary, $secondary-invert),
 "lightorange":($lightorange, $lightorange-invert),
 "accent":($accent, $accent-invert),
+"purple1lightest":($purple1lightest, $white),
+"purple1ldarkest":($purple1ldarkest, $white-ter),
 "twitter":($twitter, $twitter-invert),
 	"linkedin": ($linkedin, $linkedin-invert),
 	"github": ($github, $github-invert));
