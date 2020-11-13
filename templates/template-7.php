@@ -4,7 +4,7 @@
   <div class="container pageparticle">
     <div class="columns">
       <div class="column is-12">
-        <h2 class="title is-2">Bulma Template 7</h2>
+        <h2 class="title is-2">Template 7</h2>
         <p  class="subtitle">Blop loop - 3 cards</p>
       </div>
     </div>

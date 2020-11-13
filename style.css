@@ -13308,6 +13308,10 @@ nav li.button a {
   color: white;
 }
 
+.navbar {
+  background-color: transparent;
+}
+
 @media screen and (max-width: 1201px) {
   nav .navbar-menu {
     background-color: whitesmoke;

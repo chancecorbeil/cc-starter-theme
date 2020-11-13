@@ -132,7 +132,7 @@ if( get_field('select_header_template', 'option') == 'headertemplate1' ) {
 <?php endif; ?>
 
 
-<section class="section shortsection has-background-white-ter" id="bulmatemplate10">
+<section class="section shortsection has-background-white-ter">
     <div class="container wide-container">
 
         <div class="columns is-vcentered">

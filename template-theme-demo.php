@@ -117,28 +117,45 @@ get_header();
     <div class="container">
       <div class="columns">
         <div class="column is-12 has-text-centered">
-          <h2 class="title is-2">Bulma Bolts</h2>
-          <p class="subtitle">Use these Bulma components in your projects</p>
+          <h2 class="title is-2">Theme Demo</h2>
+          <p class="subtitle">Use these components in your projects</p>
 
           <div class="tabs is-centered">
             <ul>
-              <li><a href="#bulmatemplate1">Bulma Template 1</a></li>
-              <li><a href="#bulmatemplate2">Bulma Template 2</a></li>
-              <li><a href="#bulmatemplate3">Bulma Template 3</a></li>
-              <li><a href="#bulmatemplate4">Bulma Template 4</a></li>
-              <li><a href="#bulmatemplate5">Bulma Template 5</a></li>
+              <li><a href="#template1">Template 1</a></li>
+              <li><a href="#template2">Template 2</a></li>
+              <li><a href="#template3">Template 3</a></li>
+              <li><a href="#template4">Template 4</a></li>
+              <li><a href="#template5">Template 5</a></li>
             </ul>
           </div>
 
           <div class="tabs is-centered">
             <ul>
-              <li><a href="#bulmatemplate6">Bulma Template 6</a></li>
-              <li><a href="#bulmatemplate7">Bulma Template 7</a></li>
-              <li><a href="#bulmatemplate8">Bulma Template 8</a></li>
-              <li><a href="#bulmatemplate9">Bulma Template 9</a></li>
-              <li><a href="#bulmatemplate10">Bulma Template 10</a></li>
+              <li><a href="#template6">Template 6</a></li>
+              <li><a href="#template7">Template 7</a></li>
+              <li><a href="#template8">Template 8</a></li>
+              <li><a href="#template9">Template 9</a></li>
+              <li><a href="#template10">Template 10</a></li>
             </ul>
           </div>
+
+          <div class="tabs is-centered">
+            <ul>
+              <li><a href="#template11">Template 11</a></li>
+              <li><a href="#template12">Template 12</a></li>
+              <li><a href="#template13">Template 13</a></li>
+              <li><a href="#template14">Template 14</a></li>
+              <li><a href="#template15">Template 15</a></li>
+            </ul>
+          </div>
+
+          <h2 class="title is-2">Notes for this page</h2>
+          <ul>
+          <li>Make sure each template has a subtitle describing what is in the section</li>
+          <li>Make template title area stand out in some way</li>
+          <li>Make template template. Get it...</li>
+          </ul>
 
         </div>
       </div>
@@ -146,17 +163,17 @@ get_header();
   </section>
   <!-- End: Page IntroPage Intro -->
 
-  <!-- Add Bulma Template 1  --> <?php get_template_part( 'templates-bulma/bulma-template-1'); ?>
-  <!-- Add Bulma Template 2  --> <?php get_template_part( 'templates-bulma/bulma-template-2'); ?>
-  <!-- Add Bulma Template 3  --> <?php get_template_part( 'templates-bulma/bulma-template-3'); ?>
-  <!-- Add Bulma Template 4  --> <?php get_template_part( 'templates-bulma/bulma-template-4'); ?>
-  <!-- Add Bulma Template 5  --> <?php get_template_part( 'templates-bulma/bulma-template-5'); ?>
-  <!-- Add Bulma Template 6  --> <?php get_template_part( 'templates-bulma/bulma-template-6'); ?>
-  <!-- Add Bulma Template 7  --> <?php get_template_part( 'templates-bulma/bulma-template-7'); ?>
-  <!-- Add Bulma Template 8  --> <?php get_template_part( 'templates-bulma/bulma-template-8'); ?>
-  <!-- Add Bulma Template 9  --> <?php get_template_part( 'templates-bulma/bulma-template-9'); ?>
-  <!-- Add Bulma Template 10  --> <?php get_template_part( 'templates-bulma/bulma-template-10'); ?>
-  <!-- Add Bulma Template 11  --> <?php get_template_part( 'templates-bulma/bulma-template-11'); ?>
+  <!-- Add Template 1  --> <?php get_template_part( 'templates/template-1'); ?>
+  <!-- Add Template 2  --> <?php get_template_part( 'templates/template-2'); ?>
+  <!-- Add Template 3  --> <?php get_template_part( 'templates/template-3'); ?>
+  <!-- Add Template 4  --> <?php get_template_part( 'templates/template-4'); ?>
+  <!-- Add Template 5  --> <?php get_template_part( 'templates/template-5'); ?>
+  <!-- Add Template 6  --> <?php get_template_part( 'templates/template-6'); ?>
+  <!-- Add Template 7  --> <?php get_template_part( 'templates/template-7'); ?>
+  <!-- Add Template 8  --> <?php get_template_part( 'templates/template-8'); ?>
+  <!-- Add Template 9  --> <?php get_template_part( 'templates/template-9'); ?>
+  <!-- Add Template 10  --> <?php get_template_part( 'templates/template-10'); ?>
+  <!-- Add Template 11  --> <?php get_template_part( 'templates/template-11'); ?>
 
 
 

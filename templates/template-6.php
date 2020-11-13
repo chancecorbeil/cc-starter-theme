@@ -2,7 +2,7 @@
   <div class="container">
     <div class="columns">
       <div class="column is-12">
-        <h2 class="title is-2">Bulma Template 6</h2>
+        <h2 class="title is-2">Template 6</h2>
       </div>
     </div>
   </div>

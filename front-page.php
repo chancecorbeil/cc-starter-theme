@@ -55,6 +55,18 @@ get_header();
 </ul>
 
 
+
+
+<div class="title is-2">Links</div>
+
+<ul>
+<li><a href="<?php echo get_home_url(); ?>/theme-demo/">Theme Demo</a></li>
+<li><a href="<?php echo get_home_url(); ?>/advanced-custom-fields/">Advanced Custom Fields</a></li>
+</ul>
+
+
+
+
           <div class="title is-2">Coming soon to the documentation</div>
 
           <ul>

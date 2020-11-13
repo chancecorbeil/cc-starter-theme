@@ -1,10 +1,10 @@
-<!-- Section 8 : Color Demo -->
-<section class="section pageparticlecontainer" id="bulmatemplate8">
+<!-- Template 1 : Color Demo -->
+<section class="section pageparticlecontainer" id="template1">
 
   <div class="container pageparticle">
     <div class="columns">
       <div class="column is-12">
-        <h2 class="title is-2">Bulma Template 8</h2>
+        <h2 class="title is-2">Template 1</h2>
         <p  class="subtitle">The purpose of this section is to explore color variables is SASS</p>
       </div>
     </div>
@@ -55,4 +55,4 @@
   </div>
 
 </section>
-<!-- Section 8 : Color Demo -->
+<!-- Template 1 : Color Demo -->

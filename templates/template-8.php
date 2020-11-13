@@ -1,8 +1,8 @@
-<section class="section" id="bulmatemplate1">
+<section class="section" id="template8">
   <div class="container">
     <div class="columns">
       <div class="column is-12">
-        <h2 class="title is-2 has-text-centered">Bulma Template 1</h2>
+        <h2 class="title is-2 has-text-centered">Template 8</h2>
       </div>
     </div>
 
