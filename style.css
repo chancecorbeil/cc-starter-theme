@@ -13223,7 +13223,8 @@ section.headersection {
   margin-bottom: 0;
 }
 
-.maincontentarea p {
+.maincontentarea p,
+ul {
   padding-bottom: 1.5rem;
 }
 

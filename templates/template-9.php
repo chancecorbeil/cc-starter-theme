@@ -5,7 +5,7 @@
     <div class="columns">
       <div class="column is-12">
         <h2 class="title is-2">Template 9</h2>
-        <p class="subtitle">Blah blah blah</p>
+        <p class="subtitle">Testimonial Examples</p>
       </div>
     </div>
   </div>
